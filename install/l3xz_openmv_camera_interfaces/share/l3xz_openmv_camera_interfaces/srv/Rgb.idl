@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from l3xz_openmv_camera_interfaces/srv/Rgb.srv
+// generated code does not contain a copyright notice
+
+
+module l3xz_openmv_camera_interfaces {
+  module srv {
+    struct Rgb_Request {
+      boolean r;
+
+      boolean g;
+
+      boolean b;
+    };
+    struct Rgb_Response {
+      boolean success;
+    };
+  };
+};

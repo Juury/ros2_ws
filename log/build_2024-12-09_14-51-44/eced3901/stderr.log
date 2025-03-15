@@ -1,0 +1,5 @@
+  File "/home/student/ros2_ws/install/eced3901/lib/python3.10/site-packages/eced3901/eced3901_dt1.py", line 96
+    if if self.laser_range and self.laser_range > 0.5:
+       ^^
+SyntaxError: invalid syntax
+

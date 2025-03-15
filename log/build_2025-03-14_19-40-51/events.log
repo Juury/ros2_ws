@@ -1,0 +1,7 @@
+[0.000000] (-) TimerEvent: {}
+[0.001593] (-) JobUnselected: {'identifier': 'eced3901'}
+[0.001712] (-) JobUnselected: {'identifier': 'l3xz_openmv_camera_interfaces'}
+[0.001740] (l3xz_openmv_camera) JobQueued: {'identifier': 'l3xz_openmv_camera', 'dependencies': OrderedDict([('l3xz_openmv_camera_interfaces', '/home/student/ros2_ws/install/l3xz_openmv_camera_interfaces')])}
+[0.001768] (l3xz_openmv_camera) JobStarted: {'identifier': 'l3xz_openmv_camera'}
+[0.019224] (l3xz_openmv_camera) JobEnded: {'identifier': 'l3xz_openmv_camera', 'rc': 1}
+[0.030878] (-) EventReactorShutdown: {}

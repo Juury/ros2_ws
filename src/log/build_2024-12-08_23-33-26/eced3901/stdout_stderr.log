@@ -1,0 +1,42 @@
+running egg_info
+writing ../build/eced3901/eced3901.egg-info/PKG-INFO
+writing dependency_links to ../build/eced3901/eced3901.egg-info/dependency_links.txt
+writing entry points to ../build/eced3901/eced3901.egg-info/entry_points.txt
+writing requirements to ../build/eced3901/eced3901.egg-info/requires.txt
+writing top-level names to ../build/eced3901/eced3901.egg-info/top_level.txt
+reading manifest file '../build/eced3901/eced3901.egg-info/SOURCES.txt'
+writing manifest file '../build/eced3901/eced3901.egg-info/SOURCES.txt'
+running build
+running build_py
+copying eced3901/dt1.py -> /home/student/ros2_ws/src/build/eced3901/build/lib/eced3901
+copying eced3901/subscriber_member_function.py -> /home/student/ros2_ws/src/build/eced3901/build/lib/eced3901
+copying eced3901/publisher_member_function.py -> /home/student/ros2_ws/src/build/eced3901/build/lib/eced3901
+running install
+running install_lib
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+copying /home/student/ros2_ws/src/build/eced3901/build/lib/eced3901/dt1.py -> /home/student/ros2_ws/src/install/eced3901/lib/python3.10/site-packages/eced3901
+copying /home/student/ros2_ws/src/build/eced3901/build/lib/eced3901/subscriber_member_function.py -> /home/student/ros2_ws/src/install/eced3901/lib/python3.10/site-packages/eced3901
+copying /home/student/ros2_ws/src/build/eced3901/build/lib/eced3901/publisher_member_function.py -> /home/student/ros2_ws/src/install/eced3901/lib/python3.10/site-packages/eced3901
+byte-compiling /home/student/ros2_ws/src/install/eced3901/lib/python3.10/site-packages/eced3901/dt1.py to dt1.cpython-310.pyc
+byte-compiling /home/student/ros2_ws/src/install/eced3901/lib/python3.10/site-packages/eced3901/subscriber_member_function.py to subscriber_member_function.cpython-310.pyc
+byte-compiling /home/student/ros2_ws/src/install/eced3901/lib/python3.10/site-packages/eced3901/publisher_member_function.py to publisher_member_function.cpython-310.pyc
+running install_data
+copying resource/eced3901 -> /home/student/ros2_ws/src/install/eced3901/share/ament_index/resource_index/packages
+copying package.xml -> /home/student/ros2_ws/src/install/eced3901/share/eced3901
+creating /home/student/ros2_ws/src/install/eced3901/share/eced3901/launch
+copying launch/lab6nav.launch.py -> /home/student/ros2_ws/src/install/eced3901/share/eced3901/launch
+copying launch/lab5dt2.launch.py -> /home/student/ros2_ws/src/install/eced3901/share/eced3901/launch
+copying launch/lab6b.launch.py -> /home/student/ros2_ws/src/install/eced3901/share/eced3901/launch
+copying launch/lab5.launch.py -> /home/student/ros2_ws/src/install/eced3901/share/eced3901/launch
+copying launch/lab4a.launch.py -> /home/student/ros2_ws/src/install/eced3901/share/eced3901/launch
+copying launch/lab4b.launch.py -> /home/student/ros2_ws/src/install/eced3901/share/eced3901/launch
+copying launch/lab3.launch.py -> /home/student/ros2_ws/src/install/eced3901/share/eced3901/launch
+copying launch/lab6a.launch.py -> /home/student/ros2_ws/src/install/eced3901/share/eced3901/launch
+copying launch/lab7nav.launch.py -> /home/student/ros2_ws/src/install/eced3901/share/eced3901/launch
+running install_egg_info
+Copying ../build/eced3901/eced3901.egg-info to /home/student/ros2_ws/src/install/eced3901/lib/python3.10/site-packages/eced3901-0.0.0-py3.10.egg-info
+running install_scripts
+Installing dt1 script to /home/student/ros2_ws/src/install/eced3901/bin
+Installing talker script to /home/student/ros2_ws/src/install/eced3901/bin
+writing list of installed files to '/home/student/ros2_ws/src/build/eced3901/install.log'

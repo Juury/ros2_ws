@@ -1,0 +1,18 @@
+running egg_info
+writing ../../build/eced3901/eced3901.egg-info/PKG-INFO
+writing dependency_links to ../../build/eced3901/eced3901.egg-info/dependency_links.txt
+writing entry points to ../../build/eced3901/eced3901.egg-info/entry_points.txt
+writing requirements to ../../build/eced3901/eced3901.egg-info/requires.txt
+writing top-level names to ../../build/eced3901/eced3901.egg-info/top_level.txt
+reading manifest file '../../build/eced3901/eced3901.egg-info/SOURCES.txt'
+writing manifest file '../../build/eced3901/eced3901.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+creating /home/student/ros2_ws/install/eced3901/share/eced3901/maps
+copying maps/lab4_map.yaml -> /home/student/ros2_ws/install/eced3901/share/eced3901/maps
+copying maps/lab4_map.pgm -> /home/student/ros2_ws/install/eced3901/share/eced3901/maps
+creating /home/student/ros2_ws/install/eced3901/share/eced3901/models
+error: can't copy 'models/eced3901_lab4': doesn't exist or not a regular file

@@ -1,0 +1,33 @@
+running egg_info
+creating ../build/test-3901/test_3901.egg-info
+writing ../build/test-3901/test_3901.egg-info/PKG-INFO
+writing dependency_links to ../build/test-3901/test_3901.egg-info/dependency_links.txt
+writing entry points to ../build/test-3901/test_3901.egg-info/entry_points.txt
+writing requirements to ../build/test-3901/test_3901.egg-info/requires.txt
+writing top-level names to ../build/test-3901/test_3901.egg-info/top_level.txt
+writing manifest file '../build/test-3901/test_3901.egg-info/SOURCES.txt'
+reading manifest file '../build/test-3901/test_3901.egg-info/SOURCES.txt'
+writing manifest file '../build/test-3901/test_3901.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/student/ros2_ws/src/build/test-3901/build
+creating /home/student/ros2_ws/src/build/test-3901/build/lib
+creating /home/student/ros2_ws/src/build/test-3901/build/lib/test-3901
+copying test-3901/__init__.py -> /home/student/ros2_ws/src/build/test-3901/build/lib/test-3901
+running install
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running install_lib
+creating /home/student/ros2_ws/src/install/test-3901/lib/python3.10/site-packages/test-3901
+copying /home/student/ros2_ws/src/build/test-3901/build/lib/test-3901/__init__.py -> /home/student/ros2_ws/src/install/test-3901/lib/python3.10/site-packages/test-3901
+byte-compiling /home/student/ros2_ws/src/install/test-3901/lib/python3.10/site-packages/test-3901/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/student/ros2_ws/src/install/test-3901/share/ament_index
+creating /home/student/ros2_ws/src/install/test-3901/share/ament_index/resource_index
+creating /home/student/ros2_ws/src/install/test-3901/share/ament_index/resource_index/packages
+copying resource/test-3901 -> /home/student/ros2_ws/src/install/test-3901/share/ament_index/resource_index/packages
+copying package.xml -> /home/student/ros2_ws/src/install/test-3901/share/test-3901
+running install_egg_info
+Copying ../build/test-3901/test_3901.egg-info to /home/student/ros2_ws/src/install/test-3901/lib/python3.10/site-packages/test_3901-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/student/ros2_ws/src/build/test-3901/install.log'

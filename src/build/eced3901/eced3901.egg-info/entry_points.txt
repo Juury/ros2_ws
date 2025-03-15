@@ -1,0 +1,4 @@
+[console_scripts]
+dt1 = eced3901.eced3901_dt1:main
+talker = eced3901.publisher_member_function:main
+

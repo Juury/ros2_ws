@@ -1,0 +1,4 @@
+/home/student/ros2_ws/build/l3xz_openmv_camera_interfaces/rosidl_adapter/l3xz_openmv_camera_interfaces:srv/Gpio.idl
+/home/student/ros2_ws/build/l3xz_openmv_camera_interfaces/rosidl_adapter/l3xz_openmv_camera_interfaces:srv/GpioSet.idl
+/home/student/ros2_ws/build/l3xz_openmv_camera_interfaces/rosidl_adapter/l3xz_openmv_camera_interfaces:srv/Ir.idl
+/home/student/ros2_ws/build/l3xz_openmv_camera_interfaces/rosidl_adapter/l3xz_openmv_camera_interfaces:srv/Rgb.idl

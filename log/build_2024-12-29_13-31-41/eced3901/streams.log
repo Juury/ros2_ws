@@ -1,0 +1,34 @@
+[1.221s] Invoking command in '/home/student/ros2_ws/src/eced3901': PYTHONPATH=/home/student/ros2_ws/build/eced3901/prefix_override:/home/student/ros2_ws/install/eced3901/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/eced3901 build --build-base /home/student/ros2_ws/build/eced3901/build install --record /home/student/ros2_ws/build/eced3901/install.log --single-version-externally-managed
+[1.524s] running egg_info
+[1.525s] writing ../../build/eced3901/eced3901.egg-info/PKG-INFO
+[1.526s] writing dependency_links to ../../build/eced3901/eced3901.egg-info/dependency_links.txt
+[1.528s] writing entry points to ../../build/eced3901/eced3901.egg-info/entry_points.txt
+[1.528s] writing requirements to ../../build/eced3901/eced3901.egg-info/requires.txt
+[1.528s] writing top-level names to ../../build/eced3901/eced3901.egg-info/top_level.txt
+[1.532s] reading manifest file '../../build/eced3901/eced3901.egg-info/SOURCES.txt'
+[1.534s] writing manifest file '../../build/eced3901/eced3901.egg-info/SOURCES.txt'
+[1.535s] running build
+[1.535s] running build_py
+[1.535s] copying eced3901/eced3901_serialcode.py -> /home/student/ros2_ws/build/eced3901/build/lib/eced3901
+[1.536s] copying eced3901/eced3901_dt1.py -> /home/student/ros2_ws/build/eced3901/build/lib/eced3901
+[1.536s] copying eced3901/publisher_member_function.py -> /home/student/ros2_ws/build/eced3901/build/lib/eced3901
+[1.537s] running install
+[1.537s] running install_lib
+[1.539s] copying /home/student/ros2_ws/build/eced3901/build/lib/eced3901/eced3901_serialcode.py -> /home/student/ros2_ws/install/eced3901/lib/python3.10/site-packages/eced3901
+[1.542s] copying /home/student/ros2_ws/build/eced3901/build/lib/eced3901/eced3901_dt1.py -> /home/student/ros2_ws/install/eced3901/lib/python3.10/site-packages/eced3901
+[1.542s] copying /home/student/ros2_ws/build/eced3901/build/lib/eced3901/publisher_member_function.py -> /home/student/ros2_ws/install/eced3901/lib/python3.10/site-packages/eced3901
+[1.542s] byte-compiling /home/student/ros2_ws/install/eced3901/lib/python3.10/site-packages/eced3901/eced3901_serialcode.py to eced3901_serialcode.cpython-310.pyc
+[1.545s] byte-compiling /home/student/ros2_ws/install/eced3901/lib/python3.10/site-packages/eced3901/eced3901_dt1.py to eced3901_dt1.cpython-310.pyc
+[1.546s] byte-compiling /home/student/ros2_ws/install/eced3901/lib/python3.10/site-packages/eced3901/publisher_member_function.py to publisher_member_function.cpython-310.pyc
+[1.547s] running install_data
+[1.548s] copying launch/lab1.launch.py -> /home/student/ros2_ws/install/eced3901/share/eced3901/launch
+[1.548s] copying worlds/eced3901_lab1.world -> /home/student/ros2_ws/install/eced3901/share/eced3901/worlds
+[1.551s] running install_egg_info
+[1.553s] removing '/home/student/ros2_ws/install/eced3901/lib/python3.10/site-packages/eced3901-0.0.0-py3.10.egg-info' (and everything under it)
+[1.553s] Copying ../../build/eced3901/eced3901.egg-info to /home/student/ros2_ws/install/eced3901/lib/python3.10/site-packages/eced3901-0.0.0-py3.10.egg-info
+[1.553s] running install_scripts
+[1.592s] Installing dt1 script to /home/student/ros2_ws/install/eced3901/lib/eced3901
+[1.592s] Installing serialsensor script to /home/student/ros2_ws/install/eced3901/lib/eced3901
+[1.592s] Installing talker script to /home/student/ros2_ws/install/eced3901/lib/eced3901
+[1.592s] writing list of installed files to '/home/student/ros2_ws/build/eced3901/install.log'
+[1.633s] Invoked command in '/home/student/ros2_ws/src/eced3901' returned '0': PYTHONPATH=/home/student/ros2_ws/build/eced3901/prefix_override:/home/student/ros2_ws/install/eced3901/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/eced3901 build --build-base /home/student/ros2_ws/build/eced3901/build install --record /home/student/ros2_ws/build/eced3901/install.log --single-version-externally-managed

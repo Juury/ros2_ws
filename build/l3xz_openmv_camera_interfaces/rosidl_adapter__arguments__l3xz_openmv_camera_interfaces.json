@@ -1,0 +1,9 @@
+{
+  "package_name": "l3xz_openmv_camera_interfaces",
+  "non_idl_tuples": [
+    "/home/student/ros2_ws/src/l3xz_openmv_camera/l3xz_openmv_camera_interfaces:srv/Gpio.srv",
+    "/home/student/ros2_ws/src/l3xz_openmv_camera/l3xz_openmv_camera_interfaces:srv/GpioSet.srv",
+    "/home/student/ros2_ws/src/l3xz_openmv_camera/l3xz_openmv_camera_interfaces:srv/Ir.srv",
+    "/home/student/ros2_ws/src/l3xz_openmv_camera/l3xz_openmv_camera_interfaces:srv/Rgb.srv"
+  ]
+}

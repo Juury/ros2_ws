@@ -1,0 +1,24 @@
+[1.568s] Invoking command in '/home/student/ros2_ws/src/ECED3901-Competition-2024': PYTHONPATH=/home/student/ros2_ws/build/eced3901_competition_2024/prefix_override:/home/student/ros2_ws/install/eced3901_competition_2024/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/eced3901_competition_2024 build --build-base /home/student/ros2_ws/build/eced3901_competition_2024/build install --record /home/student/ros2_ws/build/eced3901_competition_2024/install.log --single-version-externally-managed
+[2.032s] running egg_info
+[2.033s] writing ../../build/eced3901_competition_2024/eced3901_competition_2024.egg-info/PKG-INFO
+[2.034s] writing dependency_links to ../../build/eced3901_competition_2024/eced3901_competition_2024.egg-info/dependency_links.txt
+[2.035s] writing entry points to ../../build/eced3901_competition_2024/eced3901_competition_2024.egg-info/entry_points.txt
+[2.035s] writing requirements to ../../build/eced3901_competition_2024/eced3901_competition_2024.egg-info/requires.txt
+[2.035s] writing top-level names to ../../build/eced3901_competition_2024/eced3901_competition_2024.egg-info/top_level.txt
+[2.038s] reading manifest file '../../build/eced3901_competition_2024/eced3901_competition_2024.egg-info/SOURCES.txt'
+[2.039s] writing manifest file '../../build/eced3901_competition_2024/eced3901_competition_2024.egg-info/SOURCES.txt'
+[2.039s] running build
+[2.039s] running build_py
+[2.041s] running install
+[2.042s] running install_lib
+[2.044s] running install_data
+[2.045s] running install_egg_info
+[2.052s] removing '/home/student/ros2_ws/install/eced3901_competition_2024/lib/python3.10/site-packages/eced3901_competition_2024-0.0.0-py3.10.egg-info' (and everything under it)
+[2.052s] Copying ../../build/eced3901_competition_2024/eced3901_competition_2024.egg-info to /home/student/ros2_ws/install/eced3901_competition_2024/lib/python3.10/site-packages/eced3901_competition_2024-0.0.0-py3.10.egg-info
+[2.052s] running install_scripts
+[2.084s] Installing competition_publisher script to /home/student/ros2_ws/install/eced3901_competition_2024/lib/eced3901_competition_2024
+[2.084s] Installing pose_listener script to /home/student/ros2_ws/install/eced3901_competition_2024/lib/eced3901_competition_2024
+[2.084s] Installing test_student script to /home/student/ros2_ws/install/eced3901_competition_2024/lib/eced3901_competition_2024
+[2.085s] Installing test_student_with_switch script to /home/student/ros2_ws/install/eced3901_competition_2024/lib/eced3901_competition_2024
+[2.085s] writing list of installed files to '/home/student/ros2_ws/build/eced3901_competition_2024/install.log'
+[2.149s] Invoked command in '/home/student/ros2_ws/src/ECED3901-Competition-2024' returned '0': PYTHONPATH=/home/student/ros2_ws/build/eced3901_competition_2024/prefix_override:/home/student/ros2_ws/install/eced3901_competition_2024/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/eced3901_competition_2024 build --build-base /home/student/ros2_ws/build/eced3901_competition_2024/build install --record /home/student/ros2_ws/build/eced3901_competition_2024/install.log --single-version-externally-managed

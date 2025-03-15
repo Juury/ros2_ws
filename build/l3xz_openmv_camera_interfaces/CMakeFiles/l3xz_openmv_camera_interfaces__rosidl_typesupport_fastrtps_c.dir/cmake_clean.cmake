@@ -1,0 +1,25 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/l3xz_openmv_camera_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/l3xz_openmv_camera_interfaces/srv/detail/gpio__type_support_c.cpp.o"
+  "CMakeFiles/l3xz_openmv_camera_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/l3xz_openmv_camera_interfaces/srv/detail/gpio__type_support_c.cpp.o.d"
+  "CMakeFiles/l3xz_openmv_camera_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/l3xz_openmv_camera_interfaces/srv/detail/gpio_set__type_support_c.cpp.o"
+  "CMakeFiles/l3xz_openmv_camera_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/l3xz_openmv_camera_interfaces/srv/detail/gpio_set__type_support_c.cpp.o.d"
+  "CMakeFiles/l3xz_openmv_camera_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/l3xz_openmv_camera_interfaces/srv/detail/ir__type_support_c.cpp.o"
+  "CMakeFiles/l3xz_openmv_camera_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/l3xz_openmv_camera_interfaces/srv/detail/ir__type_support_c.cpp.o.d"
+  "CMakeFiles/l3xz_openmv_camera_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/l3xz_openmv_camera_interfaces/srv/detail/rgb__type_support_c.cpp.o"
+  "CMakeFiles/l3xz_openmv_camera_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/l3xz_openmv_camera_interfaces/srv/detail/rgb__type_support_c.cpp.o.d"
+  "libl3xz_openmv_camera_interfaces__rosidl_typesupport_fastrtps_c.pdb"
+  "libl3xz_openmv_camera_interfaces__rosidl_typesupport_fastrtps_c.so"
+  "rosidl_typesupport_fastrtps_c/l3xz_openmv_camera_interfaces/srv/detail/gpio__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/l3xz_openmv_camera_interfaces/srv/detail/gpio__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/l3xz_openmv_camera_interfaces/srv/detail/gpio_set__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/l3xz_openmv_camera_interfaces/srv/detail/gpio_set__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/l3xz_openmv_camera_interfaces/srv/detail/ir__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/l3xz_openmv_camera_interfaces/srv/detail/ir__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/l3xz_openmv_camera_interfaces/srv/detail/rgb__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/l3xz_openmv_camera_interfaces/srv/detail/rgb__type_support_c.cpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/l3xz_openmv_camera_interfaces__rosidl_typesupport_fastrtps_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

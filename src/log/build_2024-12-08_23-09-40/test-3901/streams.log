@@ -1,0 +1,34 @@
+[1.135s] Invoking command in '/home/student/ros2_ws/src/test-3901': PYTHONPATH=/home/student/ros2_ws/src/build/test-3901/prefix_override:/home/student/ros2_ws/src/install/test-3901/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/test-3901 build --build-base /home/student/ros2_ws/src/build/test-3901/build install --record /home/student/ros2_ws/src/build/test-3901/install.log --single-version-externally-managed
+[1.378s] running egg_info
+[1.378s] creating ../build/test-3901/test_3901.egg-info
+[1.379s] writing ../build/test-3901/test_3901.egg-info/PKG-INFO
+[1.381s] writing dependency_links to ../build/test-3901/test_3901.egg-info/dependency_links.txt
+[1.381s] writing entry points to ../build/test-3901/test_3901.egg-info/entry_points.txt
+[1.381s] writing requirements to ../build/test-3901/test_3901.egg-info/requires.txt
+[1.382s] writing top-level names to ../build/test-3901/test_3901.egg-info/top_level.txt
+[1.382s] writing manifest file '../build/test-3901/test_3901.egg-info/SOURCES.txt'
+[1.389s] reading manifest file '../build/test-3901/test_3901.egg-info/SOURCES.txt'
+[1.391s] writing manifest file '../build/test-3901/test_3901.egg-info/SOURCES.txt'
+[1.392s] running build
+[1.392s] running build_py
+[1.394s] creating /home/student/ros2_ws/src/build/test-3901/build
+[1.394s] creating /home/student/ros2_ws/src/build/test-3901/build/lib
+[1.395s] creating /home/student/ros2_ws/src/build/test-3901/build/lib/test-3901
+[1.395s] copying test-3901/__init__.py -> /home/student/ros2_ws/src/build/test-3901/build/lib/test-3901
+[1.396s] running install
+[1.397s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.397s]   warnings.warn(
+[1.398s] running install_lib
+[1.400s] creating /home/student/ros2_ws/src/install/test-3901/lib/python3.10/site-packages/test-3901
+[1.401s] copying /home/student/ros2_ws/src/build/test-3901/build/lib/test-3901/__init__.py -> /home/student/ros2_ws/src/install/test-3901/lib/python3.10/site-packages/test-3901
+[1.401s] byte-compiling /home/student/ros2_ws/src/install/test-3901/lib/python3.10/site-packages/test-3901/__init__.py to __init__.cpython-310.pyc
+[1.402s] running install_data
+[1.402s] creating /home/student/ros2_ws/src/install/test-3901/share/ament_index
+[1.403s] creating /home/student/ros2_ws/src/install/test-3901/share/ament_index/resource_index
+[1.404s] creating /home/student/ros2_ws/src/install/test-3901/share/ament_index/resource_index/packages
+[1.404s] copying resource/test-3901 -> /home/student/ros2_ws/src/install/test-3901/share/ament_index/resource_index/packages
+[1.409s] copying package.xml -> /home/student/ros2_ws/src/install/test-3901/share/test-3901
+[1.409s] running install_egg_info
+[1.409s] Copying ../build/test-3901/test_3901.egg-info to /home/student/ros2_ws/src/install/test-3901/lib/python3.10/site-packages/test_3901-0.0.0-py3.10.egg-info
+[1.410s] running install_scripts
+[1.415s] writing list of installed files to '/home/student/ros2_ws/src/build/test-3901/install.log'

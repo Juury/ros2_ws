@@ -1,0 +1,11 @@
+setup.py
+l3xz_openmv_camera_interfaces/__init__.py
+l3xz_openmv_camera_interfaces.egg-info/PKG-INFO
+l3xz_openmv_camera_interfaces.egg-info/SOURCES.txt
+l3xz_openmv_camera_interfaces.egg-info/dependency_links.txt
+l3xz_openmv_camera_interfaces.egg-info/top_level.txt
+l3xz_openmv_camera_interfaces/srv/__init__.py
+l3xz_openmv_camera_interfaces/srv/_gpio.py
+l3xz_openmv_camera_interfaces/srv/_gpio_set.py
+l3xz_openmv_camera_interfaces/srv/_ir.py
+l3xz_openmv_camera_interfaces/srv/_rgb.py

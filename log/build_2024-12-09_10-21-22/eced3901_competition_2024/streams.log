@@ -1,0 +1,53 @@
+[1.254s] Invoking command in '/home/student/ros2_ws/src/ECED3901-Competition-2024': PYTHONPATH=/home/student/ros2_ws/build/eced3901_competition_2024/prefix_override:/home/student/ros2_ws/install/eced3901_competition_2024/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/eced3901_competition_2024 build --build-base /home/student/ros2_ws/build/eced3901_competition_2024/build install --record /home/student/ros2_ws/build/eced3901_competition_2024/install.log --single-version-externally-managed
+[1.563s] running egg_info
+[1.564s] creating ../../build/eced3901_competition_2024/eced3901_competition_2024.egg-info
+[1.564s] writing ../../build/eced3901_competition_2024/eced3901_competition_2024.egg-info/PKG-INFO
+[1.564s] writing dependency_links to ../../build/eced3901_competition_2024/eced3901_competition_2024.egg-info/dependency_links.txt
+[1.565s] writing entry points to ../../build/eced3901_competition_2024/eced3901_competition_2024.egg-info/entry_points.txt
+[1.565s] writing requirements to ../../build/eced3901_competition_2024/eced3901_competition_2024.egg-info/requires.txt
+[1.565s] writing top-level names to ../../build/eced3901_competition_2024/eced3901_competition_2024.egg-info/top_level.txt
+[1.565s] writing manifest file '../../build/eced3901_competition_2024/eced3901_competition_2024.egg-info/SOURCES.txt'
+[1.567s] reading manifest file '../../build/eced3901_competition_2024/eced3901_competition_2024.egg-info/SOURCES.txt'
+[1.568s] writing manifest file '../../build/eced3901_competition_2024/eced3901_competition_2024.egg-info/SOURCES.txt'
+[1.568s] running build
+[1.568s] running build_py
+[1.568s] creating /home/student/ros2_ws/build/eced3901_competition_2024/build
+[1.568s] creating /home/student/ros2_ws/build/eced3901_competition_2024/build/lib
+[1.568s] creating /home/student/ros2_ws/build/eced3901_competition_2024/build/lib/eced3901_competition_2024
+[1.569s] copying eced3901_competition_2024/competition_publisher.py -> /home/student/ros2_ws/build/eced3901_competition_2024/build/lib/eced3901_competition_2024
+[1.569s] copying eced3901_competition_2024/test_student_with_switch.py -> /home/student/ros2_ws/build/eced3901_competition_2024/build/lib/eced3901_competition_2024
+[1.569s] copying eced3901_competition_2024/test_student.py -> /home/student/ros2_ws/build/eced3901_competition_2024/build/lib/eced3901_competition_2024
+[1.569s] copying eced3901_competition_2024/__init__.py -> /home/student/ros2_ws/build/eced3901_competition_2024/build/lib/eced3901_competition_2024
+[1.569s] copying eced3901_competition_2024/pose_listener.py -> /home/student/ros2_ws/build/eced3901_competition_2024/build/lib/eced3901_competition_2024
+[1.570s] running install
+[1.570s] running install_lib
+[1.573s] creating /home/student/ros2_ws/install/eced3901_competition_2024/lib/python3.10/site-packages/eced3901_competition_2024
+[1.573s] copying /home/student/ros2_ws/build/eced3901_competition_2024/build/lib/eced3901_competition_2024/competition_publisher.py -> /home/student/ros2_ws/install/eced3901_competition_2024/lib/python3.10/site-packages/eced3901_competition_2024
+[1.573s] copying /home/student/ros2_ws/build/eced3901_competition_2024/build/lib/eced3901_competition_2024/test_student_with_switch.py -> /home/student/ros2_ws/install/eced3901_competition_2024/lib/python3.10/site-packages/eced3901_competition_2024
+[1.573s] copying /home/student/ros2_ws/build/eced3901_competition_2024/build/lib/eced3901_competition_2024/test_student.py -> /home/student/ros2_ws/install/eced3901_competition_2024/lib/python3.10/site-packages/eced3901_competition_2024
+[1.573s] copying /home/student/ros2_ws/build/eced3901_competition_2024/build/lib/eced3901_competition_2024/__init__.py -> /home/student/ros2_ws/install/eced3901_competition_2024/lib/python3.10/site-packages/eced3901_competition_2024
+[1.573s] copying /home/student/ros2_ws/build/eced3901_competition_2024/build/lib/eced3901_competition_2024/pose_listener.py -> /home/student/ros2_ws/install/eced3901_competition_2024/lib/python3.10/site-packages/eced3901_competition_2024
+[1.573s] byte-compiling /home/student/ros2_ws/install/eced3901_competition_2024/lib/python3.10/site-packages/eced3901_competition_2024/competition_publisher.py to competition_publisher.cpython-310.pyc
+[1.574s] byte-compiling /home/student/ros2_ws/install/eced3901_competition_2024/lib/python3.10/site-packages/eced3901_competition_2024/test_student_with_switch.py to test_student_with_switch.cpython-310.pyc
+[1.574s] byte-compiling /home/student/ros2_ws/install/eced3901_competition_2024/lib/python3.10/site-packages/eced3901_competition_2024/test_student.py to test_student.cpython-310.pyc
+[1.575s] byte-compiling /home/student/ros2_ws/install/eced3901_competition_2024/lib/python3.10/site-packages/eced3901_competition_2024/__init__.py to __init__.cpython-310.pyc
+[1.575s] byte-compiling /home/student/ros2_ws/install/eced3901_competition_2024/lib/python3.10/site-packages/eced3901_competition_2024/pose_listener.py to pose_listener.cpython-310.pyc
+[1.575s] running install_data
+[1.577s] creating /home/student/ros2_ws/install/eced3901_competition_2024/share/ament_index
+[1.577s] creating /home/student/ros2_ws/install/eced3901_competition_2024/share/ament_index/resource_index
+[1.577s] creating /home/student/ros2_ws/install/eced3901_competition_2024/share/ament_index/resource_index/packages
+[1.577s] copying resource/eced3901_competition_2024 -> /home/student/ros2_ws/install/eced3901_competition_2024/share/ament_index/resource_index/packages
+[1.577s] copying package.xml -> /home/student/ros2_ws/install/eced3901_competition_2024/share/eced3901_competition_2024
+[1.577s] creating /home/student/ros2_ws/install/eced3901_competition_2024/share/eced3901_competition_2024/launch
+[1.577s] copying launch/demo.launch.py -> /home/student/ros2_ws/install/eced3901_competition_2024/share/eced3901_competition_2024/launch
+[1.577s] copying launch/team_11_launch.py -> /home/student/ros2_ws/install/eced3901_competition_2024/share/eced3901_competition_2024/launch
+[1.577s] copying launch/team_15_launch.py -> /home/student/ros2_ws/install/eced3901_competition_2024/share/eced3901_competition_2024/launch
+[1.578s] running install_egg_info
+[1.580s] Copying ../../build/eced3901_competition_2024/eced3901_competition_2024.egg-info to /home/student/ros2_ws/install/eced3901_competition_2024/lib/python3.10/site-packages/eced3901_competition_2024-0.0.0-py3.10.egg-info
+[1.581s] running install_scripts
+[1.609s] Installing competition_publisher script to /home/student/ros2_ws/install/eced3901_competition_2024/lib/eced3901_competition_2024
+[1.609s] Installing pose_listener script to /home/student/ros2_ws/install/eced3901_competition_2024/lib/eced3901_competition_2024
+[1.609s] Installing test_student script to /home/student/ros2_ws/install/eced3901_competition_2024/lib/eced3901_competition_2024
+[1.610s] Installing test_student_with_switch script to /home/student/ros2_ws/install/eced3901_competition_2024/lib/eced3901_competition_2024
+[1.610s] writing list of installed files to '/home/student/ros2_ws/build/eced3901_competition_2024/install.log'
+[1.661s] Invoked command in '/home/student/ros2_ws/src/ECED3901-Competition-2024' returned '0': PYTHONPATH=/home/student/ros2_ws/build/eced3901_competition_2024/prefix_override:/home/student/ros2_ws/install/eced3901_competition_2024/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/eced3901_competition_2024 build --build-base /home/student/ros2_ws/build/eced3901_competition_2024/build install --record /home/student/ros2_ws/build/eced3901_competition_2024/install.log --single-version-externally-managed

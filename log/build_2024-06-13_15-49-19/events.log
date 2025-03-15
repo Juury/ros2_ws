@@ -1,0 +1,287 @@
+[0.000000] (-) TimerEvent: {}
+[0.000258] (eced3901) JobQueued: {'identifier': 'eced3901', 'dependencies': OrderedDict()}
+[0.000462] (eced3901_competition_2024) JobQueued: {'identifier': 'eced3901_competition_2024', 'dependencies': OrderedDict()}
+[0.000485] (eced3901) JobStarted: {'identifier': 'eced3901'}
+[0.010982] (eced3901_competition_2024) JobStarted: {'identifier': 'eced3901_competition_2024'}
+[0.022976] (eced3901) JobProgress: {'identifier': 'eced3901', 'progress': 'cmake'}
+[0.023352] (eced3901) Command: {'cmd': ['/usr/bin/cmake', '/home/student/ros2_ws/src/eced3901', '-DCMAKE_INSTALL_PREFIX=/home/student/ros2_ws/install/eced3901'], 'cwd': '/home/student/ros2_ws/build/eced3901', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'student'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/student'), ('OLDPWD', '/home/student'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1016'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/student/ros2_ws/install:/home/student/imu_ws/install:/home/student/ydlidar_ros2_ws/install:/home/student/motor_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'student'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'student'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/student/ros2_ws/src/eced3901/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mini:@/tmp/.ICE-unix/991,unix/mini:/tmp/.ICE-unix/991'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/73123e51_9301_4f2c_b261_845e579cab6b'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_CA.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.2MYGP2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.142'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/student/motor_ws/install/dalmotor:/home/student/ros2_ws/install/eced3901_competition_2024:/home/student/ros2_ws/install/eced3901:/home/student/imu_ws/install/bno055:/home/student/ydlidar_ros2_ws/install/ydlidar:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/student/ros2_ws/build/eced3901'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/student/motor_ws/install/dalmotor/lib/python3.10/site-packages:/home/student/ros2_ws/install/eced3901_competition_2024/lib/python3.10/site-packages:/home/student/imu_ws/install/bno055/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/student/ros2_ws/install/eced3901:/home/student/ydlidar_ros2_ws/install/ydlidar:/home/student/motor_ws/install/dalmotor:/home/student/ros2_ws/install/eced3901_competition_2024:/home/student/imu_ws/install/bno055:/opt/ros/humble')]), 'shell': False}
+[0.099673] (-) TimerEvent: {}
+[0.111805] (eced3901) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.3.0\n'}
+[0.195812] (eced3901) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.3.0\n'}
+[0.199791] (-) TimerEvent: {}
+[0.202665] (eced3901) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.267644] (eced3901) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.275707] (eced3901) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.276399] (eced3901) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.276985] (eced3901) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.280199] (eced3901) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.299895] (-) TimerEvent: {}
+[0.358518] (eced3901) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.366362] (eced3901) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.366645] (eced3901) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.367130] (eced3901) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.369973] (eced3901) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.4 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.400028] (-) TimerEvent: {}
+[0.500317] (-) TimerEvent: {}
+[0.539106] (eced3901) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter \n'}
+[0.600475] (-) TimerEvent: {}
+[0.613626] (eced3901_competition_2024) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/eced3901_competition_2024', 'build', '--build-base', '/home/student/ros2_ws/build/eced3901_competition_2024/build', 'install', '--record', '/home/student/ros2_ws/build/eced3901_competition_2024/install.log', '--single-version-externally-managed'], 'cwd': '/home/student/ros2_ws/src/ECED3901-Competition-2024', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_CA:en', 'USER': 'student', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/student', 'OLDPWD': '/home/student', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1016', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/student/ros2_ws/install:/home/student/imu_ws/install:/home/student/ydlidar_ros2_ws/install:/home/student/motor_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'student', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'student', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': ':/home/student/ros2_ws/src/eced3901/models', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/mini:@/tmp/.ICE-unix/991,unix/mini:/tmp/.ICE-unix/991', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/73123e51_9301_4f2c_b261_845e579cab6b', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_CA.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.2MYGP2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.142', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '30', 'AMENT_PREFIX_PATH': '/home/student/motor_ws/install/dalmotor:/home/student/ros2_ws/install/eced3901_competition_2024:/home/student/ros2_ws/install/eced3901:/home/student/imu_ws/install/bno055:/home/student/ydlidar_ros2_ws/install/ydlidar:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/student/ros2_ws/build/eced3901_competition_2024', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/student/ros2_ws/build/eced3901_competition_2024/prefix_override:/home/student/ros2_ws/install/eced3901_competition_2024/lib/python3.10/site-packages:/home/student/motor_ws/install/dalmotor/lib/python3.10/site-packages:/home/student/ros2_ws/install/eced3901_competition_2024/lib/python3.10/site-packages:/home/student/imu_ws/install/bno055/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/student/ros2_ws/install/eced3901:/home/student/ydlidar_ros2_ws/install/ydlidar'}, 'shell': False}
+[0.629853] (eced3901) StdoutLine: {'line': b'-- Found rclcpp: 16.0.4 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.673828] (eced3901) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.678863] (eced3901) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.687175] (eced3901) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.700557] (-) TimerEvent: {}
+[0.701077] (eced3901) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.720418] (eced3901) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.791332] (eced3901) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.793992] (eced3901) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.800675] (-) TimerEvent: {}
+[0.825989] (eced3901_competition_2024) StdoutLine: {'line': b'running egg_info\n'}
+[0.826745] (eced3901_competition_2024) StdoutLine: {'line': b'creating ../../build/eced3901_competition_2024/eced3901_competition_2024.egg-info\n'}
+[0.826934] (eced3901_competition_2024) StdoutLine: {'line': b'writing ../../build/eced3901_competition_2024/eced3901_competition_2024.egg-info/PKG-INFO\n'}
+[0.827675] (eced3901_competition_2024) StdoutLine: {'line': b'writing dependency_links to ../../build/eced3901_competition_2024/eced3901_competition_2024.egg-info/dependency_links.txt\n'}
+[0.827838] (eced3901_competition_2024) StdoutLine: {'line': b'writing entry points to ../../build/eced3901_competition_2024/eced3901_competition_2024.egg-info/entry_points.txt\n'}
+[0.827922] (eced3901_competition_2024) StdoutLine: {'line': b'writing requirements to ../../build/eced3901_competition_2024/eced3901_competition_2024.egg-info/requires.txt\n'}
+[0.828005] (eced3901_competition_2024) StdoutLine: {'line': b'writing top-level names to ../../build/eced3901_competition_2024/eced3901_competition_2024.egg-info/top_level.txt\n'}
+[0.828118] (eced3901_competition_2024) StdoutLine: {'line': b"writing manifest file '../../build/eced3901_competition_2024/eced3901_competition_2024.egg-info/SOURCES.txt'\n"}
+[0.829436] (eced3901_competition_2024) StdoutLine: {'line': b"reading manifest file '../../build/eced3901_competition_2024/eced3901_competition_2024.egg-info/SOURCES.txt'\n"}
+[0.830166] (eced3901_competition_2024) StdoutLine: {'line': b"writing manifest file '../../build/eced3901_competition_2024/eced3901_competition_2024.egg-info/SOURCES.txt'\n"}
+[0.830355] (eced3901_competition_2024) StdoutLine: {'line': b'running build\n'}
+[0.830441] (eced3901_competition_2024) StdoutLine: {'line': b'running build_py\n'}
+[0.830561] (eced3901_competition_2024) StdoutLine: {'line': b'creating /home/student/ros2_ws/build/eced3901_competition_2024/build\n'}
+[0.830647] (eced3901_competition_2024) StdoutLine: {'line': b'creating /home/student/ros2_ws/build/eced3901_competition_2024/build/lib\n'}
+[0.830725] (eced3901_competition_2024) StdoutLine: {'line': b'creating /home/student/ros2_ws/build/eced3901_competition_2024/build/lib/eced3901_competition_2024\n'}
+[0.830836] (eced3901_competition_2024) StdoutLine: {'line': b'copying eced3901_competition_2024/competition_publisher.py -> /home/student/ros2_ws/build/eced3901_competition_2024/build/lib/eced3901_competition_2024\n'}
+[0.832484] (eced3901_competition_2024) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[0.832674] (eced3901_competition_2024) StderrLine: {'line': b'  warnings.warn(\n'}
+[0.832768] (eced3901_competition_2024) StdoutLine: {'line': b'copying eced3901_competition_2024/test_student_with_switch.py -> /home/student/ros2_ws/build/eced3901_competition_2024/build/lib/eced3901_competition_2024\n'}
+[0.832857] (eced3901_competition_2024) StdoutLine: {'line': b'copying eced3901_competition_2024/test_student.py -> /home/student/ros2_ws/build/eced3901_competition_2024/build/lib/eced3901_competition_2024\n'}
+[0.832941] (eced3901_competition_2024) StdoutLine: {'line': b'copying eced3901_competition_2024/__init__.py -> /home/student/ros2_ws/build/eced3901_competition_2024/build/lib/eced3901_competition_2024\n'}
+[0.833016] (eced3901_competition_2024) StdoutLine: {'line': b'copying eced3901_competition_2024/pose_listener.py -> /home/student/ros2_ws/build/eced3901_competition_2024/build/lib/eced3901_competition_2024\n'}
+[0.833089] (eced3901_competition_2024) StdoutLine: {'line': b'running install\n'}
+[0.833158] (eced3901_competition_2024) StdoutLine: {'line': b'running install_lib\n'}
+[0.833285] (eced3901_competition_2024) StdoutLine: {'line': b'creating /home/student/ros2_ws/install/eced3901_competition_2024/lib/python3.10/site-packages/eced3901_competition_2024\n'}
+[0.833361] (eced3901_competition_2024) StdoutLine: {'line': b'copying /home/student/ros2_ws/build/eced3901_competition_2024/build/lib/eced3901_competition_2024/competition_publisher.py -> /home/student/ros2_ws/install/eced3901_competition_2024/lib/python3.10/site-packages/eced3901_competition_2024\n'}
+[0.833430] (eced3901_competition_2024) StdoutLine: {'line': b'copying /home/student/ros2_ws/build/eced3901_competition_2024/build/lib/eced3901_competition_2024/test_student_with_switch.py -> /home/student/ros2_ws/install/eced3901_competition_2024/lib/python3.10/site-packages/eced3901_competition_2024\n'}
+[0.833495] (eced3901_competition_2024) StdoutLine: {'line': b'copying /home/student/ros2_ws/build/eced3901_competition_2024/build/lib/eced3901_competition_2024/test_student.py -> /home/student/ros2_ws/install/eced3901_competition_2024/lib/python3.10/site-packages/eced3901_competition_2024\n'}
+[0.833559] (eced3901_competition_2024) StdoutLine: {'line': b'copying /home/student/ros2_ws/build/eced3901_competition_2024/build/lib/eced3901_competition_2024/__init__.py -> /home/student/ros2_ws/install/eced3901_competition_2024/lib/python3.10/site-packages/eced3901_competition_2024\n'}
+[0.833621] (eced3901_competition_2024) StdoutLine: {'line': b'copying /home/student/ros2_ws/build/eced3901_competition_2024/build/lib/eced3901_competition_2024/pose_listener.py -> /home/student/ros2_ws/install/eced3901_competition_2024/lib/python3.10/site-packages/eced3901_competition_2024\n'}
+[0.833731] (eced3901_competition_2024) StdoutLine: {'line': b'byte-compiling /home/student/ros2_ws/install/eced3901_competition_2024/lib/python3.10/site-packages/eced3901_competition_2024/competition_publisher.py to competition_publisher.cpython-310.pyc\n'}
+[0.834193] (eced3901_competition_2024) StdoutLine: {'line': b'byte-compiling /home/student/ros2_ws/install/eced3901_competition_2024/lib/python3.10/site-packages/eced3901_competition_2024/test_student_with_switch.py to test_student_with_switch.cpython-310.pyc\n'}
+[0.834789] (eced3901_competition_2024) StdoutLine: {'line': b'byte-compiling /home/student/ros2_ws/install/eced3901_competition_2024/lib/python3.10/site-packages/eced3901_competition_2024/test_student.py to test_student.cpython-310.pyc\n'}
+[0.835318] (eced3901_competition_2024) StdoutLine: {'line': b'byte-compiling /home/student/ros2_ws/install/eced3901_competition_2024/lib/python3.10/site-packages/eced3901_competition_2024/__init__.py to __init__.cpython-310.pyc\n'}
+[0.835478] (eced3901_competition_2024) StdoutLine: {'line': b'byte-compiling /home/student/ros2_ws/install/eced3901_competition_2024/lib/python3.10/site-packages/eced3901_competition_2024/pose_listener.py to pose_listener.cpython-310.pyc\n'}
+[0.835866] (eced3901_competition_2024) StdoutLine: {'line': b'running install_data\n'}
+[0.836386] (eced3901_competition_2024) StdoutLine: {'line': b'creating /home/student/ros2_ws/install/eced3901_competition_2024/share/ament_index\n'}
+[0.836549] (eced3901_competition_2024) StdoutLine: {'line': b'creating /home/student/ros2_ws/install/eced3901_competition_2024/share/ament_index/resource_index\n'}
+[0.836632] (eced3901_competition_2024) StdoutLine: {'line': b'creating /home/student/ros2_ws/install/eced3901_competition_2024/share/ament_index/resource_index/packages\n'}
+[0.836714] (eced3901_competition_2024) StdoutLine: {'line': b'copying resource/eced3901_competition_2024 -> /home/student/ros2_ws/install/eced3901_competition_2024/share/ament_index/resource_index/packages\n'}
+[0.836831] (eced3901_competition_2024) StdoutLine: {'line': b'copying package.xml -> /home/student/ros2_ws/install/eced3901_competition_2024/share/eced3901_competition_2024\n'}
+[0.836910] (eced3901_competition_2024) StdoutLine: {'line': b'creating /home/student/ros2_ws/install/eced3901_competition_2024/share/eced3901_competition_2024/launch\n'}
+[0.836981] (eced3901_competition_2024) StdoutLine: {'line': b'copying launch/demo.launch.py -> /home/student/ros2_ws/install/eced3901_competition_2024/share/eced3901_competition_2024/launch\n'}
+[0.837077] (eced3901_competition_2024) StdoutLine: {'line': b'copying launch/team_11_launch.py -> /home/student/ros2_ws/install/eced3901_competition_2024/share/eced3901_competition_2024/launch\n'}
+[0.837145] (eced3901_competition_2024) StdoutLine: {'line': b'copying launch/team_15_launch.py -> /home/student/ros2_ws/install/eced3901_competition_2024/share/eced3901_competition_2024/launch\n'}
+[0.837210] (eced3901_competition_2024) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.838541] (eced3901_competition_2024) StdoutLine: {'line': b'Copying ../../build/eced3901_competition_2024/eced3901_competition_2024.egg-info to /home/student/ros2_ws/install/eced3901_competition_2024/lib/python3.10/site-packages/eced3901_competition_2024-0.0.0-py3.10.egg-info\n'}
+[0.839356] (eced3901_competition_2024) StdoutLine: {'line': b'running install_scripts\n'}
+[0.861092] (eced3901_competition_2024) StdoutLine: {'line': b'Installing competition_publisher script to /home/student/ros2_ws/install/eced3901_competition_2024/lib/eced3901_competition_2024\n'}
+[0.861322] (eced3901_competition_2024) StdoutLine: {'line': b'Installing pose_listener script to /home/student/ros2_ws/install/eced3901_competition_2024/lib/eced3901_competition_2024\n'}
+[0.861424] (eced3901_competition_2024) StdoutLine: {'line': b'Installing test_student script to /home/student/ros2_ws/install/eced3901_competition_2024/lib/eced3901_competition_2024\n'}
+[0.861521] (eced3901_competition_2024) StdoutLine: {'line': b'Installing test_student_with_switch script to /home/student/ros2_ws/install/eced3901_competition_2024/lib/eced3901_competition_2024\n'}
+[0.861866] (eced3901_competition_2024) StdoutLine: {'line': b"writing list of installed files to '/home/student/ros2_ws/build/eced3901_competition_2024/install.log'\n"}
+[0.888931] (eced3901_competition_2024) CommandEnded: {'returncode': 0}
+[0.890648] (eced3901) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.900917] (-) TimerEvent: {}
+[0.902621] (eced3901_competition_2024) JobEnded: {'identifier': 'eced3901_competition_2024', 'rc': 0}
+[0.915672] (eced3901) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.959432] (eced3901) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.968633] (eced3901) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.001051] (-) TimerEvent: {}
+[1.033368] (eced3901) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.033959] (eced3901) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.099162] (eced3901) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.100200] (eced3901) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.101111] (-) TimerEvent: {}
+[1.201360] (-) TimerEvent: {}
+[1.259251] (eced3901) StdoutLine: {'line': b'-- Found rclpy: 3.3.8 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[1.260957] (eced3901) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[1.301466] (-) TimerEvent: {}
+[1.304352] (eced3901) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.3 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[1.390582] (eced3901) StdoutLine: {'line': b'-- Found tf2: 0.25.2 (/opt/ros/humble/share/tf2/cmake)\n'}
+[1.401574] (-) TimerEvent: {}
+[1.406911] (eced3901) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.6 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.480686] (eced3901) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.480951] (eced3901) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[1.481045] (eced3901) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.481383] (eced3901) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.482094] (eced3901) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.482697] (eced3901) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.484102] (eced3901) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.484213] (eced3901) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.484669] (eced3901) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.485687] (eced3901) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.495632] (eced3901) StdoutLine: {'line': b'-- Generating done\n'}
+[1.497204] (eced3901) StdoutLine: {'line': b'-- Build files have been written to: /home/student/ros2_ws/build/eced3901\n'}
+[1.501703] (-) TimerEvent: {}
+[1.505239] (eced3901) CommandEnded: {'returncode': 0}
+[1.505745] (eced3901) JobProgress: {'identifier': 'eced3901', 'progress': 'build'}
+[1.506803] (eced3901) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/student/ros2_ws/build/eced3901', '--', '-j4', '-l4'], 'cwd': '/home/student/ros2_ws/build/eced3901', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'student'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/student'), ('OLDPWD', '/home/student'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1016'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/student/ros2_ws/install:/home/student/imu_ws/install:/home/student/ydlidar_ros2_ws/install:/home/student/motor_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'student'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'student'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/student/ros2_ws/src/eced3901/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mini:@/tmp/.ICE-unix/991,unix/mini:/tmp/.ICE-unix/991'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/73123e51_9301_4f2c_b261_845e579cab6b'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_CA.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.2MYGP2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.142'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/student/motor_ws/install/dalmotor:/home/student/ros2_ws/install/eced3901_competition_2024:/home/student/ros2_ws/install/eced3901:/home/student/imu_ws/install/bno055:/home/student/ydlidar_ros2_ws/install/ydlidar:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/student/ros2_ws/build/eced3901'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/student/motor_ws/install/dalmotor/lib/python3.10/site-packages:/home/student/ros2_ws/install/eced3901_competition_2024/lib/python3.10/site-packages:/home/student/imu_ws/install/bno055/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/student/ros2_ws/install/eced3901:/home/student/ydlidar_ros2_ws/install/ydlidar:/home/student/motor_ws/install/dalmotor:/home/student/ros2_ws/install/eced3901_competition_2024:/home/student/imu_ws/install/bno055:/opt/ros/humble')]), 'shell': False}
+[1.548830] (eced3901) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/talker.dir/src/publisher_member_function.cpp.o\x1b[0m\n'}
+[1.549063] (eced3901) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/dt1.dir/src/eced3901_dt1.cpp.o\x1b[0m\n'}
+[1.601814] (-) TimerEvent: {}
+[1.702111] (-) TimerEvent: {}
+[1.802423] (-) TimerEvent: {}
+[1.902712] (-) TimerEvent: {}
+[2.003094] (-) TimerEvent: {}
+[2.103434] (-) TimerEvent: {}
+[2.203798] (-) TimerEvent: {}
+[2.304159] (-) TimerEvent: {}
+[2.404471] (-) TimerEvent: {}
+[2.504802] (-) TimerEvent: {}
+[2.605085] (-) TimerEvent: {}
+[2.705419] (-) TimerEvent: {}
+[2.805742] (-) TimerEvent: {}
+[2.906065] (-) TimerEvent: {}
+[3.006396] (-) TimerEvent: {}
+[3.106716] (-) TimerEvent: {}
+[3.207060] (-) TimerEvent: {}
+[3.307375] (-) TimerEvent: {}
+[3.407703] (-) TimerEvent: {}
+[3.508082] (-) TimerEvent: {}
+[3.608408] (-) TimerEvent: {}
+[3.708751] (-) TimerEvent: {}
+[3.809110] (-) TimerEvent: {}
+[3.909419] (-) TimerEvent: {}
+[4.009750] (-) TimerEvent: {}
+[4.110102] (-) TimerEvent: {}
+[4.210436] (-) TimerEvent: {}
+[4.310775] (-) TimerEvent: {}
+[4.411143] (-) TimerEvent: {}
+[4.511480] (-) TimerEvent: {}
+[4.611811] (-) TimerEvent: {}
+[4.712130] (-) TimerEvent: {}
+[4.812438] (-) TimerEvent: {}
+[4.912743] (-) TimerEvent: {}
+[5.013070] (-) TimerEvent: {}
+[5.113398] (-) TimerEvent: {}
+[5.213738] (-) TimerEvent: {}
+[5.314061] (-) TimerEvent: {}
+[5.414381] (-) TimerEvent: {}
+[5.514698] (-) TimerEvent: {}
+[5.615021] (-) TimerEvent: {}
+[5.715360] (-) TimerEvent: {}
+[5.815696] (-) TimerEvent: {}
+[5.908290] (eced3901) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable talker\x1b[0m\n'}
+[5.915828] (-) TimerEvent: {}
+[6.016198] (-) TimerEvent: {}
+[6.102441] (eced3901) StdoutLine: {'line': b'[ 75%] Built target talker\n'}
+[6.116291] (-) TimerEvent: {}
+[6.216595] (-) TimerEvent: {}
+[6.316947] (-) TimerEvent: {}
+[6.417278] (-) TimerEvent: {}
+[6.517580] (-) TimerEvent: {}
+[6.617882] (-) TimerEvent: {}
+[6.718183] (-) TimerEvent: {}
+[6.818500] (-) TimerEvent: {}
+[6.918870] (-) TimerEvent: {}
+[7.019205] (-) TimerEvent: {}
+[7.119503] (-) TimerEvent: {}
+[7.219803] (-) TimerEvent: {}
+[7.320103] (-) TimerEvent: {}
+[7.420392] (-) TimerEvent: {}
+[7.520681] (-) TimerEvent: {}
+[7.620974] (-) TimerEvent: {}
+[7.721272] (-) TimerEvent: {}
+[7.821570] (-) TimerEvent: {}
+[7.921868] (-) TimerEvent: {}
+[8.022181] (-) TimerEvent: {}
+[8.122474] (-) TimerEvent: {}
+[8.222772] (-) TimerEvent: {}
+[8.323061] (-) TimerEvent: {}
+[8.423352] (-) TimerEvent: {}
+[8.523657] (-) TimerEvent: {}
+[8.624019] (-) TimerEvent: {}
+[8.724288] (-) TimerEvent: {}
+[8.824584] (-) TimerEvent: {}
+[8.924878] (-) TimerEvent: {}
+[9.025178] (-) TimerEvent: {}
+[9.125433] (-) TimerEvent: {}
+[9.225717] (-) TimerEvent: {}
+[9.326009] (-) TimerEvent: {}
+[9.426308] (-) TimerEvent: {}
+[9.526600] (-) TimerEvent: {}
+[9.626891] (-) TimerEvent: {}
+[9.727188] (-) TimerEvent: {}
+[9.827489] (-) TimerEvent: {}
+[9.927805] (-) TimerEvent: {}
+[10.028085] (-) TimerEvent: {}
+[10.089523] (eced3901) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable dt1\x1b[0m\n'}
+[10.128179] (-) TimerEvent: {}
+[10.228461] (-) TimerEvent: {}
+[10.328781] (-) TimerEvent: {}
+[10.429086] (-) TimerEvent: {}
+[10.521172] (eced3901) StdoutLine: {'line': b'[100%] Built target dt1\n'}
+[10.529084] (eced3901) CommandEnded: {'returncode': 0}
+[10.529560] (-) TimerEvent: {}
+[10.547950] (eced3901) JobProgress: {'identifier': 'eced3901', 'progress': 'install'}
+[10.554750] (eced3901) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/student/ros2_ws/build/eced3901'], 'cwd': '/home/student/ros2_ws/build/eced3901', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'student'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/student'), ('OLDPWD', '/home/student'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1016'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/student/ros2_ws/install:/home/student/imu_ws/install:/home/student/ydlidar_ros2_ws/install:/home/student/motor_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'student'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'student'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/student/ros2_ws/src/eced3901/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mini:@/tmp/.ICE-unix/991,unix/mini:/tmp/.ICE-unix/991'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/73123e51_9301_4f2c_b261_845e579cab6b'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_CA.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.2MYGP2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.142'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/student/motor_ws/install/dalmotor:/home/student/ros2_ws/install/eced3901_competition_2024:/home/student/ros2_ws/install/eced3901:/home/student/imu_ws/install/bno055:/home/student/ydlidar_ros2_ws/install/ydlidar:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/student/ros2_ws/build/eced3901'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/student/motor_ws/install/dalmotor/lib/python3.10/site-packages:/home/student/ros2_ws/install/eced3901_competition_2024/lib/python3.10/site-packages:/home/student/imu_ws/install/bno055/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/student/ros2_ws/install/eced3901:/home/student/ydlidar_ros2_ws/install/ydlidar:/home/student/motor_ws/install/dalmotor:/home/student/ros2_ws/install/eced3901_competition_2024:/home/student/imu_ws/install/bno055:/opt/ros/humble')]), 'shell': False}
+[10.561091] (eced3901) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.561347] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/lib/eced3901/talker\n'}
+[10.562264] (eced3901) StdoutLine: {'line': b'-- Set runtime path of "/home/student/ros2_ws/install/eced3901/lib/eced3901/talker" to ""\n'}
+[10.562378] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/lib/eced3901/dt1\n'}
+[10.565033] (eced3901) StdoutLine: {'line': b'-- Set runtime path of "/home/student/ros2_ws/install/eced3901/lib/eced3901/dt1" to ""\n'}
+[10.565221] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/config\n'}
+[10.565375] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/config/ekf.yaml\n'}
+[10.565645] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/launch\n'}
+[10.565746] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/launch/lab6nav.launch.py\n'}
+[10.565906] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/launch/lab5dt2.launch.py\n'}
+[10.566083] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/launch/lab6b.launch.py\n'}
+[10.566204] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/launch/lab5.launch.py\n'}
+[10.566308] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/launch/lab4a.launch.py\n'}
+[10.566492] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/launch/lab4b.launch.py\n'}
+[10.566684] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/launch/lab3.launch.py\n'}
+[10.566877] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/launch/lab6a.launch.py\n'}
+[10.567059] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/launch/lab7nav.launch.py\n'}
+[10.567198] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/maps\n'}
+[10.567313] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/maps/lab4_map.yaml\n'}
+[10.567411] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/maps/lab4_map.pgm\n'}
+[10.567553] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/models\n'}
+[10.567644] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/models/eced3901_lab4\n'}
+[10.567729] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/models/eced3901_lab4/model.sdf\n'}
+[10.567839] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/models/eced3901_lab4/model.config\n'}
+[10.568078] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/models/eced3901bot.urdf\n'}
+[10.568240] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/models/eced3901bot_description\n'}
+[10.568333] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/models/eced3901bot_description/model.sdf\n'}
+[10.568480] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/models/eced3901bot_description/model.config\n'}
+[10.568646] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/params\n'}
+[10.568731] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/params/nav2_params.yaml\n'}
+[10.568910] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/rviz\n'}
+[10.568992] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/rviz/nav2.rviz\n'}
+[10.569162] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/rviz/urdf_config.rviz\n'}
+[10.569347] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/rviz/nav2_config.rviz\n'}
+[10.569566] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/src\n'}
+[10.569655] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/src/eced3901_dt1.cpp\n'}
+[10.569736] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/src/publisher_member_function.cpp\n'}
+[10.569824] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/worlds\n'}
+[10.569908] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/worlds/eced3901_lab6.world\n'}
+[10.570025] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/worlds/empty.world\n'}
+[10.570190] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/worlds/eced3901_lab4.world\n'}
+[10.570403] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/lib/eced3901/demo_inspection.py\n'}
+[10.570673] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/ament_index/resource_index/package_run_dependencies/eced3901\n'}
+[10.570825] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/ament_index/resource_index/parent_prefix_path/eced3901\n'}
+[10.571007] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/environment/ament_prefix_path.sh\n'}
+[10.571311] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/environment/ament_prefix_path.dsv\n'}
+[10.571544] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/environment/path.sh\n'}
+[10.571750] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/environment/path.dsv\n'}
+[10.571953] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/local_setup.bash\n'}
+[10.572557] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/local_setup.sh\n'}
+[10.572740] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/local_setup.zsh\n'}
+[10.572939] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/local_setup.dsv\n'}
+[10.573210] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/package.dsv\n'}
+[10.573511] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/ament_index/resource_index/packages/eced3901\n'}
+[10.573734] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/cmake/eced3901Config.cmake\n'}
+[10.573851] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/cmake/eced3901Config-version.cmake\n'}
+[10.573999] (eced3901) StdoutLine: {'line': b'-- Installing: /home/student/ros2_ws/install/eced3901/share/eced3901/package.xml\n'}
+[10.575598] (eced3901) CommandEnded: {'returncode': 0}
+[10.620742] (eced3901) JobEnded: {'identifier': 'eced3901', 'rc': 0}
+[10.621419] (-) EventReactorShutdown: {}

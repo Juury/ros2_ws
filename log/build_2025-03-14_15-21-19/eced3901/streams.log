@@ -1,0 +1,23 @@
+[0.555s] Invoking command in '/home/student/ros2_ws/src/eced3901': PYTHONPATH=/home/student/ros2_ws/build/eced3901/prefix_override:/home/student/ros2_ws/install/eced3901/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/eced3901 build --build-base /home/student/ros2_ws/build/eced3901/build install --record /home/student/ros2_ws/build/eced3901/install.log --single-version-externally-managed
+[0.772s] running egg_info
+[0.773s] writing ../../build/eced3901/eced3901.egg-info/PKG-INFO
+[0.773s] writing dependency_links to ../../build/eced3901/eced3901.egg-info/dependency_links.txt
+[0.773s] writing entry points to ../../build/eced3901/eced3901.egg-info/entry_points.txt
+[0.773s] writing requirements to ../../build/eced3901/eced3901.egg-info/requires.txt
+[0.773s] writing top-level names to ../../build/eced3901/eced3901.egg-info/top_level.txt
+[0.775s] reading manifest file '../../build/eced3901/eced3901.egg-info/SOURCES.txt'
+[0.776s] writing manifest file '../../build/eced3901/eced3901.egg-info/SOURCES.txt'
+[0.776s] running build
+[0.776s] running build_py
+[0.777s] running install
+[0.777s] running install_lib
+[0.778s] running install_data
+[0.779s] running install_egg_info
+[0.781s] removing '/home/student/ros2_ws/install/eced3901/lib/python3.10/site-packages/eced3901-0.0.0-py3.10.egg-info' (and everything under it)
+[0.781s] Copying ../../build/eced3901/eced3901.egg-info to /home/student/ros2_ws/install/eced3901/lib/python3.10/site-packages/eced3901-0.0.0-py3.10.egg-info
+[0.782s] running install_scripts
+[0.800s] Installing dt1 script to /home/student/ros2_ws/install/eced3901/lib/eced3901
+[0.801s] Installing serialsensor script to /home/student/ros2_ws/install/eced3901/lib/eced3901
+[0.801s] Installing talker script to /home/student/ros2_ws/install/eced3901/lib/eced3901
+[0.801s] writing list of installed files to '/home/student/ros2_ws/build/eced3901/install.log'
+[0.823s] Invoked command in '/home/student/ros2_ws/src/eced3901' returned '0': PYTHONPATH=/home/student/ros2_ws/build/eced3901/prefix_override:/home/student/ros2_ws/install/eced3901/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/eced3901 build --build-base /home/student/ros2_ws/build/eced3901/build install --record /home/student/ros2_ws/build/eced3901/install.log --single-version-externally-managed

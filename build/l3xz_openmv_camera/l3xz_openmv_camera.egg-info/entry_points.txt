@@ -1,0 +1,3 @@
+[console_scripts]
+l3xz_openmv_camera = l3xz_openmv_camera.l3xz_openmv_camera:main
+

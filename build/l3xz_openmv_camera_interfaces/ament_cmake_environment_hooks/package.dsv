@@ -1,0 +1,4 @@
+source;share/l3xz_openmv_camera_interfaces/local_setup.bash
+source;share/l3xz_openmv_camera_interfaces/local_setup.dsv
+source;share/l3xz_openmv_camera_interfaces/local_setup.sh
+source;share/l3xz_openmv_camera_interfaces/local_setup.zsh

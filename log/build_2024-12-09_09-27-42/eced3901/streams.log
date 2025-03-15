@@ -1,0 +1,37 @@
+[1.131s] Invoking command in '/home/student/ros2_ws/src/eced3901-2025-team00': PYTHONPATH=/home/student/ros2_ws/build/eced3901/prefix_override:/home/student/ros2_ws/install/eced3901/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/eced3901 build --build-base /home/student/ros2_ws/build/eced3901/build install --record /home/student/ros2_ws/build/eced3901/install.log --single-version-externally-managed
+[1.385s] running egg_info
+[1.385s] writing ../../build/eced3901/eced3901.egg-info/PKG-INFO
+[1.385s] writing dependency_links to ../../build/eced3901/eced3901.egg-info/dependency_links.txt
+[1.386s] writing entry points to ../../build/eced3901/eced3901.egg-info/entry_points.txt
+[1.386s] writing requirements to ../../build/eced3901/eced3901.egg-info/requires.txt
+[1.386s] writing top-level names to ../../build/eced3901/eced3901.egg-info/top_level.txt
+[1.388s] reading manifest file '../../build/eced3901/eced3901.egg-info/SOURCES.txt'
+[1.389s] writing manifest file '../../build/eced3901/eced3901.egg-info/SOURCES.txt'
+[1.389s] running build
+[1.389s] running build_py
+[1.390s] running install
+[1.390s] running install_lib
+[1.392s] running install_data
+[1.393s] copying models/eced3901bot.urdf -> /home/student/ros2_ws/install/eced3901/share/eced3901/models
+[1.393s] creating /home/student/ros2_ws/install/eced3901/share/eced3901/models/eced3901bot_description
+[1.394s] copying models/eced3901bot_description/model.sdf -> /home/student/ros2_ws/install/eced3901/share/eced3901/models/eced3901bot_description
+[1.394s] copying models/eced3901bot_description/model.config -> /home/student/ros2_ws/install/eced3901/share/eced3901/models/eced3901bot_description
+[1.394s] creating /home/student/ros2_ws/install/eced3901/share/eced3901/models/eced3901_lab4
+[1.394s] copying models/eced3901_lab4/model.sdf -> /home/student/ros2_ws/install/eced3901/share/eced3901/models/eced3901_lab4
+[1.395s] copying models/eced3901_lab4/model.config -> /home/student/ros2_ws/install/eced3901/share/eced3901/models/eced3901_lab4
+[1.395s] creating /home/student/ros2_ws/install/eced3901/share/eced3901/rviz
+[1.395s] copying rviz/nav2.rviz -> /home/student/ros2_ws/install/eced3901/share/eced3901/rviz
+[1.396s] copying rviz/urdf_config.rviz -> /home/student/ros2_ws/install/eced3901/share/eced3901/rviz
+[1.396s] copying rviz/nav2_config.rviz -> /home/student/ros2_ws/install/eced3901/share/eced3901/rviz
+[1.396s] creating /home/student/ros2_ws/install/eced3901/share/eced3901/worlds
+[1.396s] copying worlds/eced3901_lab6.world -> /home/student/ros2_ws/install/eced3901/share/eced3901/worlds
+[1.397s] copying worlds/empty.world -> /home/student/ros2_ws/install/eced3901/share/eced3901/worlds
+[1.397s] copying worlds/eced3901_lab4.world -> /home/student/ros2_ws/install/eced3901/share/eced3901/worlds
+[1.397s] running install_egg_info
+[1.399s] removing '/home/student/ros2_ws/install/eced3901/lib/python3.10/site-packages/eced3901-0.0.0-py3.10.egg-info' (and everything under it)
+[1.400s] Copying ../../build/eced3901/eced3901.egg-info to /home/student/ros2_ws/install/eced3901/lib/python3.10/site-packages/eced3901-0.0.0-py3.10.egg-info
+[1.401s] running install_scripts
+[1.428s] Installing dt1 script to /home/student/ros2_ws/install/eced3901/lib/eced3901
+[1.428s] Installing talker script to /home/student/ros2_ws/install/eced3901/lib/eced3901
+[1.429s] writing list of installed files to '/home/student/ros2_ws/build/eced3901/install.log'
+[1.468s] Invoked command in '/home/student/ros2_ws/src/eced3901-2025-team00' returned '0': PYTHONPATH=/home/student/ros2_ws/build/eced3901/prefix_override:/home/student/ros2_ws/install/eced3901/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/eced3901 build --build-base /home/student/ros2_ws/build/eced3901/build install --record /home/student/ros2_ws/build/eced3901/install.log --single-version-externally-managed

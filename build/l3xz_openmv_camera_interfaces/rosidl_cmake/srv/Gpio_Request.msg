@@ -1,0 +1,5 @@
+int8 nr
+bool output
+bool opendrain
+bool pullup
+bool pulldown

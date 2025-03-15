@@ -1,0 +1,51 @@
+running egg_info
+creating ../../build/eced3901_competition_2024/eced3901_competition_2024.egg-info
+writing ../../build/eced3901_competition_2024/eced3901_competition_2024.egg-info/PKG-INFO
+writing dependency_links to ../../build/eced3901_competition_2024/eced3901_competition_2024.egg-info/dependency_links.txt
+writing entry points to ../../build/eced3901_competition_2024/eced3901_competition_2024.egg-info/entry_points.txt
+writing requirements to ../../build/eced3901_competition_2024/eced3901_competition_2024.egg-info/requires.txt
+writing top-level names to ../../build/eced3901_competition_2024/eced3901_competition_2024.egg-info/top_level.txt
+writing manifest file '../../build/eced3901_competition_2024/eced3901_competition_2024.egg-info/SOURCES.txt'
+reading manifest file '../../build/eced3901_competition_2024/eced3901_competition_2024.egg-info/SOURCES.txt'
+writing manifest file '../../build/eced3901_competition_2024/eced3901_competition_2024.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/student/ros2_ws/build/eced3901_competition_2024/build
+creating /home/student/ros2_ws/build/eced3901_competition_2024/build/lib
+creating /home/student/ros2_ws/build/eced3901_competition_2024/build/lib/eced3901_competition_2024
+copying eced3901_competition_2024/competition_publisher.py -> /home/student/ros2_ws/build/eced3901_competition_2024/build/lib/eced3901_competition_2024
+copying eced3901_competition_2024/test_student_with_switch.py -> /home/student/ros2_ws/build/eced3901_competition_2024/build/lib/eced3901_competition_2024
+copying eced3901_competition_2024/test_student.py -> /home/student/ros2_ws/build/eced3901_competition_2024/build/lib/eced3901_competition_2024
+copying eced3901_competition_2024/__init__.py -> /home/student/ros2_ws/build/eced3901_competition_2024/build/lib/eced3901_competition_2024
+copying eced3901_competition_2024/pose_listener.py -> /home/student/ros2_ws/build/eced3901_competition_2024/build/lib/eced3901_competition_2024
+running install
+running install_lib
+creating /home/student/ros2_ws/install/eced3901_competition_2024/lib/python3.10/site-packages/eced3901_competition_2024
+copying /home/student/ros2_ws/build/eced3901_competition_2024/build/lib/eced3901_competition_2024/competition_publisher.py -> /home/student/ros2_ws/install/eced3901_competition_2024/lib/python3.10/site-packages/eced3901_competition_2024
+copying /home/student/ros2_ws/build/eced3901_competition_2024/build/lib/eced3901_competition_2024/test_student_with_switch.py -> /home/student/ros2_ws/install/eced3901_competition_2024/lib/python3.10/site-packages/eced3901_competition_2024
+copying /home/student/ros2_ws/build/eced3901_competition_2024/build/lib/eced3901_competition_2024/test_student.py -> /home/student/ros2_ws/install/eced3901_competition_2024/lib/python3.10/site-packages/eced3901_competition_2024
+copying /home/student/ros2_ws/build/eced3901_competition_2024/build/lib/eced3901_competition_2024/__init__.py -> /home/student/ros2_ws/install/eced3901_competition_2024/lib/python3.10/site-packages/eced3901_competition_2024
+copying /home/student/ros2_ws/build/eced3901_competition_2024/build/lib/eced3901_competition_2024/pose_listener.py -> /home/student/ros2_ws/install/eced3901_competition_2024/lib/python3.10/site-packages/eced3901_competition_2024
+byte-compiling /home/student/ros2_ws/install/eced3901_competition_2024/lib/python3.10/site-packages/eced3901_competition_2024/competition_publisher.py to competition_publisher.cpython-310.pyc
+byte-compiling /home/student/ros2_ws/install/eced3901_competition_2024/lib/python3.10/site-packages/eced3901_competition_2024/test_student_with_switch.py to test_student_with_switch.cpython-310.pyc
+byte-compiling /home/student/ros2_ws/install/eced3901_competition_2024/lib/python3.10/site-packages/eced3901_competition_2024/test_student.py to test_student.cpython-310.pyc
+byte-compiling /home/student/ros2_ws/install/eced3901_competition_2024/lib/python3.10/site-packages/eced3901_competition_2024/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/student/ros2_ws/install/eced3901_competition_2024/lib/python3.10/site-packages/eced3901_competition_2024/pose_listener.py to pose_listener.cpython-310.pyc
+running install_data
+creating /home/student/ros2_ws/install/eced3901_competition_2024/share/ament_index
+creating /home/student/ros2_ws/install/eced3901_competition_2024/share/ament_index/resource_index
+creating /home/student/ros2_ws/install/eced3901_competition_2024/share/ament_index/resource_index/packages
+copying resource/eced3901_competition_2024 -> /home/student/ros2_ws/install/eced3901_competition_2024/share/ament_index/resource_index/packages
+copying package.xml -> /home/student/ros2_ws/install/eced3901_competition_2024/share/eced3901_competition_2024
+creating /home/student/ros2_ws/install/eced3901_competition_2024/share/eced3901_competition_2024/launch
+copying launch/demo.launch.py -> /home/student/ros2_ws/install/eced3901_competition_2024/share/eced3901_competition_2024/launch
+copying launch/team_11_launch.py -> /home/student/ros2_ws/install/eced3901_competition_2024/share/eced3901_competition_2024/launch
+copying launch/team_15_launch.py -> /home/student/ros2_ws/install/eced3901_competition_2024/share/eced3901_competition_2024/launch
+running install_egg_info
+Copying ../../build/eced3901_competition_2024/eced3901_competition_2024.egg-info to /home/student/ros2_ws/install/eced3901_competition_2024/lib/python3.10/site-packages/eced3901_competition_2024-0.0.0-py3.10.egg-info
+running install_scripts
+Installing competition_publisher script to /home/student/ros2_ws/install/eced3901_competition_2024/lib/eced3901_competition_2024
+Installing pose_listener script to /home/student/ros2_ws/install/eced3901_competition_2024/lib/eced3901_competition_2024
+Installing test_student script to /home/student/ros2_ws/install/eced3901_competition_2024/lib/eced3901_competition_2024
+Installing test_student_with_switch script to /home/student/ros2_ws/install/eced3901_competition_2024/lib/eced3901_competition_2024
+writing list of installed files to '/home/student/ros2_ws/build/eced3901_competition_2024/install.log'

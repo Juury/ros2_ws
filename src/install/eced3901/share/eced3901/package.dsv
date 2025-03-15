@@ -1,0 +1,12 @@
+source;share/eced3901/hook/path.ps1
+source;share/eced3901/hook/path.dsv
+source;share/eced3901/hook/path.sh
+source;share/eced3901/hook/pythonpath.ps1
+source;share/eced3901/hook/pythonpath.dsv
+source;share/eced3901/hook/pythonpath.sh
+source;share/eced3901/hook/pythonscriptspath.ps1
+source;share/eced3901/hook/pythonscriptspath.dsv
+source;share/eced3901/hook/pythonscriptspath.sh
+source;share/eced3901/hook/ament_prefix_path.ps1
+source;share/eced3901/hook/ament_prefix_path.dsv
+source;share/eced3901/hook/ament_prefix_path.sh
