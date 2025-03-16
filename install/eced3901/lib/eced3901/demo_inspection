@@ -1,81 +1,144 @@
 #!/usr/bin/env python3
-
 import rclpy
+import math
+import time
 from copy import deepcopy
 from geometry_msgs.msg import PoseStamped
 from nav2_simple_commander.robot_navigator import BasicNavigator, TaskResult
 
+def quaternion_from_yaw(yaw):
+    """Return a quaternion (x, y, z, w) for a given yaw (radians)."""
+    qz = math.sin(yaw / 2.0)
+    qw = math.cos(yaw / 2.0)
+    return 0.0, 0.0, qz, qw
+
+def yaw_from_quaternion(z, w):
+    """Return yaw (radians) computed from quaternion (assuming x,y are zero)."""
+    return 2.0 * math.atan2(z, w)
+
 def main():
     rclpy.init()
-
     navigator = BasicNavigator()
 
     # -------------------------------------------------------------
-    # 1) Define a list of (x,y) positions for your inspection route
+    # 1) Define your inspection route, pre-translation rotation instructions,
+    #    translation values, and post-translation rotation instructions.
+    #    - inspection_route: List of [x, y] coordinates.
+    #    - rotation_route: List of yaw angles (radians) to apply immediately after reaching the inspection point,
+    #                      or None if no pre-translation rotation is needed.
+    #    - translation_route: List of distances (in meters) to move after the (pre-rotation) waypoint;
+    #                         positive for forward, negative for reverse, or None if no translation is needed.
+    #    - post_rotation_route: List of yaw angles (radians) to apply after translation, or None if not needed.
     # -------------------------------------------------------------
-    # For demonstration, here's a small route. Replace with your own coords.
     inspection_route = [
         [1.088, 0.0],
-        [2.10, 0.79],
-        [0.859, 0.70],
+        [2.08, 0.80],
+        [0.858, 0.78],
+        [1.4, 0.78],
+        [0.01, 0.01]
+    ]
+    rotation_route = [
+        math.pi / 2,   # At waypoint 1, rotate 90° before translation.
+        None,          # No pre-translation rotation after waypoint 2.
+        math.pi / 2,   # At waypoint 3, rotate 90° before translation.
+        math.pi / 2,   # At waypoint 4, rotate 90° before translation.
+        None
+    ]
+    translation_route = [
+        0.10,   # After waypoint 1, move forward 10 cm.
+        None,   # No translation after waypoint 2.
+        None,   # No translation after waypoint 3.
+        0.10,   # After waypoint 4, move forward 10 cm.
+        0.10    # After waypoint 5, move forward 10 cm.
+    ]
+    post_rotation_route = [
+        None,          # No post-translation rotation after waypoint 1.
+        None,          # No post-translation rotation after waypoint 2.
+        math.pi / 4,   # After waypoint 3's translation (if any), rotate 45°.
+        None,          # No post-translation rotation after waypoint 4.
+        None           # No post-translation rotation after waypoint 5.
     ]
 
     # -------------------------------------------------------------
-    # 2) Set the robot's initial pose (optional but recommended)
+    # 2) Set the robot's initial pose.
     # -------------------------------------------------------------
     initial_pose = PoseStamped()
     initial_pose.header.frame_id = 'map'
     initial_pose.header.stamp = navigator.get_clock().now().to_msg()
-
-    # Example: Start near (x=0.0, y=0.0) with a certain orientation
     initial_pose.pose.position.x = 0.0
     initial_pose.pose.position.y = 0.0
-    # Orientation (z,w) for yaw=0.0
+    # Orientation for yaw = 0 (facing forward).
     initial_pose.pose.orientation.z = 0.0
     initial_pose.pose.orientation.w = 1.0
-
-    # Tell the navigator our initial pose
     navigator.setInitialPose(initial_pose)
 
-    # Wait for Nav2 to activate
     navigator.waitUntilNav2Active()
     print("Nav2 is active; starting waypoint navigation.")
 
     # -------------------------------------------------------------
-    # 3) Convert the route list to PoseStamped waypoints
+    # 3) Build the full waypoint list.
+    # For each inspection point:
+    #   - Add the inspection waypoint.
+    #   - If a pre-translation rotation is specified, add a rotation waypoint.
+    #   - If a translation is specified, add a translation waypoint.
+    #   - If a post-translation rotation is specified, add that rotation waypoint.
     # -------------------------------------------------------------
-    inspection_points = []
-    for xy in inspection_route:
+    full_waypoints = []
+    for idx, waypoint in enumerate(inspection_route):
+        # Inspection waypoint.
         pose = PoseStamped()
         pose.header.frame_id = 'map'
         pose.header.stamp = navigator.get_clock().now().to_msg()
-
-        pose.pose.position.x = xy[0]
-        pose.pose.position.y = xy[1]
-
-        # We'll keep orientation facing "straight up" (0 radians) as an example.
-        # If you want the robot to face a certain direction, set pose.pose.orientation.
+        pose.pose.position.x = waypoint[0]
+        pose.pose.position.y = waypoint[1]
+        # Default orientation: yaw = 0 (forward).
         pose.pose.orientation.z = 0.0
         pose.pose.orientation.w = 1.0
+        full_waypoints.append(deepcopy(pose))
 
-        inspection_points.append(deepcopy(pose))
+        # Pre-translation rotation waypoint.
+        if idx < len(rotation_route) and rotation_route[idx] is not None:
+            rot_pose = deepcopy(pose)
+            _, _, qz, qw = quaternion_from_yaw(rotation_route[idx])
+            rot_pose.pose.orientation.z = qz
+            rot_pose.pose.orientation.w = qw
+            full_waypoints.append(deepcopy(rot_pose))
+
+        # Translation waypoint.
+        # Use the most recent waypoint as the base.
+        base_for_translation = full_waypoints[-1]
+        if idx < len(translation_route) and translation_route[idx] is not None:
+            distance = translation_route[idx]
+            # Determine the yaw to use: if a pre-rotation was applied, use that yaw; otherwise, use base's orientation.
+            if idx < len(rotation_route) and rotation_route[idx] is not None:
+                current_yaw = rotation_route[idx]
+            else:
+                current_yaw = yaw_from_quaternion(base_for_translation.pose.orientation.z,
+                                                  base_for_translation.pose.orientation.w)
+            trans_pose = deepcopy(base_for_translation)
+            trans_pose.pose.position.x += distance * math.cos(current_yaw)
+            trans_pose.pose.position.y += distance * math.sin(current_yaw)
+            full_waypoints.append(deepcopy(trans_pose))
+            # After translation, if a post-translation rotation is specified, add it.
+            if idx < len(post_rotation_route) and post_rotation_route[idx] is not None:
+                post_rot_pose = deepcopy(trans_pose)
+                _, _, qz_post, qw_post = quaternion_from_yaw(post_rotation_route[idx])
+                post_rot_pose.pose.orientation.z = qz_post
+                post_rot_pose.pose.orientation.w = qw_post
+                full_waypoints.append(deepcopy(post_rot_pose))
 
     # -------------------------------------------------------------
-    # 4) Follow Waypoints
+    # 4) Follow the combined waypoint list.
     # -------------------------------------------------------------
-    navigator.followWaypoints(inspection_points)
-
-    # Optionally do something else while robot is traveling
+    navigator.followWaypoints(full_waypoints)
     i = 0
     while not navigator.isTaskComplete():
         feedback = navigator.getFeedback()
         i += 1
-        # Just a simple example to print status every 5 feedback cycles
         if feedback and i % 5 == 0:
-            print(f'Executing current waypoint: '
-                  f'{feedback.current_waypoint + 1}/{len(inspection_points)}')
-
-    # Check final result
+            print(f'Executing waypoint {feedback.current_waypoint + 1}/{len(full_waypoints)}')
+        time.sleep(0.1)
+            
     result = navigator.getResult()
     if result == TaskResult.SUCCEEDED:
         print('Inspection route complete!')
@@ -85,18 +148,15 @@ def main():
         print('Route failed!')
 
     # -------------------------------------------------------------
-    # 5) (Optional) Return to Start
+    # 5) (Optional) Return to the initial pose.
     # -------------------------------------------------------------
-    # If you’d like to automatically return to the initial pose:
     initial_pose.header.stamp = navigator.get_clock().now().to_msg()
     navigator.goToPose(initial_pose)
     while not navigator.isTaskComplete():
-        pass
+        time.sleep(0.1)
 
     print("Done! Shutting down.")
     rclpy.shutdown()
 
-
 if __name__ == '__main__':
     main()
-
