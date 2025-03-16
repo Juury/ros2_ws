@@ -31,7 +31,7 @@ def main():
     #    - post_rotation_route: List of yaw angles (radians) to apply after translation, or None if not needed.
     # -------------------------------------------------------------
     inspection_route = [
-        [1.088, 0.0],
+        [1.088, -0.2],
         [2.08, 0.80],
         [0.858, 0.78],
         [1.4, 0.78],
@@ -45,14 +45,14 @@ def main():
         None
     ]
     translation_route = [
-        0.10,   # After waypoint 1, move forward 10 cm.
+        0.00,   # After waypoint 1, move forward 10 cm.
         None,   # No translation after waypoint 2.
         None,   # No translation after waypoint 3.
         0.10,   # After waypoint 4, move forward 10 cm.
         0.10    # After waypoint 5, move forward 10 cm.
     ]
     post_rotation_route = [
-        None,          # No post-translation rotation after waypoint 1.
+        math.pi / 2,          # No post-translation rotation after waypoint 1.
         None,          # No post-translation rotation after waypoint 2.
         math.pi / 4,   # After waypoint 3's translation (if any), rotate 45°.
         None,          # No post-translation rotation after waypoint 4.
