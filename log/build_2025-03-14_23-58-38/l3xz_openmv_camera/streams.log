@@ -1,0 +1,22 @@
+[0.586s] Invoking command in '/home/student/ros2_ws/src/l3xz_openmv_camera/l3xz_openmv_camera': PYTHONPATH=/home/student/ros2_ws/build/l3xz_openmv_camera/prefix_override:/home/student/ros2_ws/install/l3xz_openmv_camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/l3xz_openmv_camera build --build-base /home/student/ros2_ws/build/l3xz_openmv_camera/build install --record /home/student/ros2_ws/build/l3xz_openmv_camera/install.log --single-version-externally-managed
+[0.805s] running egg_info
+[0.806s] writing ../../../build/l3xz_openmv_camera/l3xz_openmv_camera.egg-info/PKG-INFO
+[0.806s] writing dependency_links to ../../../build/l3xz_openmv_camera/l3xz_openmv_camera.egg-info/dependency_links.txt
+[0.806s] writing entry points to ../../../build/l3xz_openmv_camera/l3xz_openmv_camera.egg-info/entry_points.txt
+[0.806s] writing requirements to ../../../build/l3xz_openmv_camera/l3xz_openmv_camera.egg-info/requires.txt
+[0.806s] writing top-level names to ../../../build/l3xz_openmv_camera/l3xz_openmv_camera.egg-info/top_level.txt
+[0.808s] reading manifest file '../../../build/l3xz_openmv_camera/l3xz_openmv_camera.egg-info/SOURCES.txt'
+[0.808s] reading manifest template 'MANIFEST.in'
+[0.809s] writing manifest file '../../../build/l3xz_openmv_camera/l3xz_openmv_camera.egg-info/SOURCES.txt'
+[0.809s] running build
+[0.809s] running build_py
+[0.810s] running install
+[0.810s] running install_lib
+[0.812s] running install_data
+[0.812s] running install_egg_info
+[0.814s] removing '/home/student/ros2_ws/install/l3xz_openmv_camera/lib/python3.10/site-packages/l3xz_openmv_camera-1.0.0-py3.10.egg-info' (and everything under it)
+[0.814s] Copying ../../../build/l3xz_openmv_camera/l3xz_openmv_camera.egg-info to /home/student/ros2_ws/install/l3xz_openmv_camera/lib/python3.10/site-packages/l3xz_openmv_camera-1.0.0-py3.10.egg-info
+[0.815s] running install_scripts
+[0.836s] Installing l3xz_openmv_camera script to /home/student/ros2_ws/install/l3xz_openmv_camera/lib/l3xz_openmv_camera
+[0.836s] writing list of installed files to '/home/student/ros2_ws/build/l3xz_openmv_camera/install.log'
+[0.861s] Invoked command in '/home/student/ros2_ws/src/l3xz_openmv_camera/l3xz_openmv_camera' returned '0': PYTHONPATH=/home/student/ros2_ws/build/l3xz_openmv_camera/prefix_override:/home/student/ros2_ws/install/l3xz_openmv_camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/l3xz_openmv_camera build --build-base /home/student/ros2_ws/build/l3xz_openmv_camera/build install --record /home/student/ros2_ws/build/l3xz_openmv_camera/install.log --single-version-externally-managed

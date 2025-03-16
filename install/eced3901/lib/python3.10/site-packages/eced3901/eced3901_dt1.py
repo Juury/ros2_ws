@@ -12,6 +12,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+import serial
+import time
+
+# Set up the serial connection (use COM7 for Windows)
+ser = serial.Serial('/dev/ttyUSB5', 9600)  # Adjust baud rate if needed
+time.sleep(2)  # Wait for connection to establish
+
+check = 0
+
+ # Send as bytes with a newline character
+
 import rclpy
 from rclpy.node import Node
 
@@ -204,18 +215,23 @@ class NavigateSquare(Node):
     def control_example_odom(self):
         """ Control example using odomentry """
 
+        global check
+
         msg = Twist()
         # This has two fields:
         # msg.linear.x
         # msg.angular.z
 		        	
 		# Calculate distance travelled from initial
-        self.d_now = pow( pow(self.x_now - self.x_init, 2) + pow(self.y_now - self.y_init, 2), 0.5 )
+        self.d_now = pow( pow(self.x_now - self.x_init, 2) + pow(self.y_now - self.y_init, 2), 0.5 ) 
 
         if self.d_now < self.d_aim:
             msg.linear.x = self.x_vel
-            msg.angular.z = 0.0            
+            msg.angular.z = 0.0    
         else:
+            if check < 1:
+                ser.write(b"SAFE~")
+                check = 2 
             msg.linear.x = 0.0 # //double(rand())/double(RAND_MAX); //fun
             msg.angular.z = 0.0 # //2*double(rand())/double(RAND_MAX) - 1; //fun
 
@@ -294,6 +310,7 @@ def main(args=None):
     # Destroy the node explicitly
     # (optional - otherwise it will be done automatically
     # when the garbage collector destroys the node object)
+
     navigate_square.destroy_node()
     rclpy.shutdown()
 

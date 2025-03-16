@@ -1,0 +1,331 @@
+[0.293s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.294s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fc1ab5afb20>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fc1abe1e0b0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fc1abe1e0b0>>)
+[0.324s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.324s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.324s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.324s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.324s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.324s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.324s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/student/ros2_ws'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extensions ['ignore', 'ignore_ament_install']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extension 'ignore'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) ignored
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/eced3901) by extensions ['ignore', 'ignore_ament_install']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/eced3901) by extension 'ignore'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/eced3901) by extension 'ignore_ament_install'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/eced3901) by extensions ['colcon_pkg']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/eced3901) by extension 'colcon_pkg'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/eced3901) by extensions ['colcon_meta']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/eced3901) by extension 'colcon_meta'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/eced3901) by extensions ['ros']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/eced3901) by extension 'ros'
+[0.341s] DEBUG:colcon.colcon_core.package_identification:Package 'src/eced3901' with type 'ros.ament_python' and name 'eced3901'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extensions ['ignore', 'ignore_ament_install']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extension 'ignore'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) ignored
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera) by extensions ['ignore', 'ignore_ament_install']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera) by extension 'ignore'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera) by extension 'ignore_ament_install'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera) by extensions ['colcon_pkg']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera) by extension 'colcon_pkg'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera) by extensions ['colcon_meta']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera) by extension 'colcon_meta'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera) by extensions ['ros']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera) by extension 'ros'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera) by extensions ['cmake', 'python']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera) by extension 'cmake'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera) by extension 'python'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera) by extensions ['python_setup_py']
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera) by extension 'python_setup_py'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/camera_script) by extensions ['ignore', 'ignore_ament_install']
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/camera_script) by extension 'ignore'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/camera_script) by extension 'ignore_ament_install'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/camera_script) by extensions ['colcon_pkg']
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/camera_script) by extension 'colcon_pkg'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/camera_script) by extensions ['colcon_meta']
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/camera_script) by extension 'colcon_meta'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/camera_script) by extensions ['ros']
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/camera_script) by extension 'ros'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/camera_script) by extensions ['cmake', 'python']
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/camera_script) by extension 'cmake'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/camera_script) by extension 'python'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/camera_script) by extensions ['python_setup_py']
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/camera_script) by extension 'python_setup_py'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/doc) by extensions ['ignore', 'ignore_ament_install']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/doc) by extension 'ignore'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/doc) by extension 'ignore_ament_install'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/doc) by extensions ['colcon_pkg']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/doc) by extension 'colcon_pkg'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/doc) by extensions ['colcon_meta']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/doc) by extension 'colcon_meta'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/doc) by extensions ['ros']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/doc) by extension 'ros'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/doc) by extensions ['cmake', 'python']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/doc) by extension 'cmake'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/doc) by extension 'python'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/doc) by extensions ['python_setup_py']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/doc) by extension 'python_setup_py'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/doc/img) by extensions ['ignore', 'ignore_ament_install']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/doc/img) by extension 'ignore'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/doc/img) by extension 'ignore_ament_install'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/doc/img) by extensions ['colcon_pkg']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/doc/img) by extension 'colcon_pkg'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/doc/img) by extensions ['colcon_meta']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/doc/img) by extension 'colcon_meta'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/doc/img) by extensions ['ros']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/doc/img) by extension 'ros'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/doc/img) by extensions ['cmake', 'python']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/doc/img) by extension 'cmake'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/doc/img) by extension 'python'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/doc/img) by extensions ['python_setup_py']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/doc/img) by extension 'python_setup_py'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/l3xz_openmv_camera) by extensions ['ignore', 'ignore_ament_install']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/l3xz_openmv_camera) by extension 'ignore'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/l3xz_openmv_camera) by extension 'ignore_ament_install'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/l3xz_openmv_camera) by extensions ['colcon_pkg']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/l3xz_openmv_camera) by extension 'colcon_pkg'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/l3xz_openmv_camera) by extensions ['colcon_meta']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/l3xz_openmv_camera) by extension 'colcon_meta'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/l3xz_openmv_camera) by extensions ['ros']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/l3xz_openmv_camera) by extension 'ros'
+[0.345s] DEBUG:colcon.colcon_core.package_identification:Package 'src/l3xz_openmv_camera/l3xz_openmv_camera' with type 'ros.ament_python' and name 'l3xz_openmv_camera'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/l3xz_openmv_camera_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/l3xz_openmv_camera_interfaces) by extension 'ignore'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/l3xz_openmv_camera_interfaces) by extension 'ignore_ament_install'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/l3xz_openmv_camera_interfaces) by extensions ['colcon_pkg']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/l3xz_openmv_camera_interfaces) by extension 'colcon_pkg'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/l3xz_openmv_camera_interfaces) by extensions ['colcon_meta']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/l3xz_openmv_camera_interfaces) by extension 'colcon_meta'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/l3xz_openmv_camera_interfaces) by extensions ['ros']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/l3xz_openmv_camera_interfaces) by extension 'ros'
+[0.346s] DEBUG:colcon.colcon_core.package_identification:Package 'src/l3xz_openmv_camera/l3xz_openmv_camera_interfaces' with type 'ros.ament_cmake' and name 'l3xz_openmv_camera_interfaces'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/launch) by extensions ['ignore', 'ignore_ament_install']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/launch) by extension 'ignore'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/launch) by extension 'ignore_ament_install'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/launch) by extensions ['colcon_pkg']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/launch) by extension 'colcon_pkg'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/launch) by extensions ['colcon_meta']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/launch) by extension 'colcon_meta'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/launch) by extensions ['ros']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/launch) by extension 'ros'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/launch) by extensions ['cmake', 'python']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/launch) by extension 'cmake'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/launch) by extension 'python'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/launch) by extensions ['python_setup_py']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src/l3xz_openmv_camera/launch) by extension 'python_setup_py'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extensions ['ignore', 'ignore_ament_install']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extension 'ignore'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) ignored
+[0.347s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.347s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.347s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.347s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.347s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.371s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.371s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.373s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/student/ros2_ws/install
+[0.374s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/student/imu_ws/install
+[0.375s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/student/ydlidar_ros2_ws/install
+[0.376s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/student/motor_ws/install
+[0.378s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 358 installed packages in /opt/ros/humble
+[0.380s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.442s] Level 5:colcon.colcon_core.verb:set package 'eced3901' build argument 'cmake_args' from command line to 'None'
+[0.442s] Level 5:colcon.colcon_core.verb:set package 'eced3901' build argument 'cmake_target' from command line to 'None'
+[0.442s] Level 5:colcon.colcon_core.verb:set package 'eced3901' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.442s] Level 5:colcon.colcon_core.verb:set package 'eced3901' build argument 'cmake_clean_cache' from command line to 'False'
+[0.442s] Level 5:colcon.colcon_core.verb:set package 'eced3901' build argument 'cmake_clean_first' from command line to 'False'
+[0.442s] Level 5:colcon.colcon_core.verb:set package 'eced3901' build argument 'cmake_force_configure' from command line to 'False'
+[0.442s] Level 5:colcon.colcon_core.verb:set package 'eced3901' build argument 'ament_cmake_args' from command line to 'None'
+[0.442s] Level 5:colcon.colcon_core.verb:set package 'eced3901' build argument 'catkin_cmake_args' from command line to 'None'
+[0.442s] Level 5:colcon.colcon_core.verb:set package 'eced3901' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.442s] DEBUG:colcon.colcon_core.verb:Building package 'eced3901' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/student/ros2_ws/build/eced3901', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/student/ros2_ws/install/eced3901', 'merge_install': False, 'path': '/home/student/ros2_ws/src/eced3901', 'symlink_install': False, 'test_result_base': None}
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'l3xz_openmv_camera_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'l3xz_openmv_camera_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'l3xz_openmv_camera_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'l3xz_openmv_camera_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'l3xz_openmv_camera_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'l3xz_openmv_camera_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'l3xz_openmv_camera_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.443s] Level 5:colcon.colcon_core.verb:set package 'l3xz_openmv_camera_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'l3xz_openmv_camera_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.444s] DEBUG:colcon.colcon_core.verb:Building package 'l3xz_openmv_camera_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/student/ros2_ws/build/l3xz_openmv_camera_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/student/ros2_ws/install/l3xz_openmv_camera_interfaces', 'merge_install': False, 'path': '/home/student/ros2_ws/src/l3xz_openmv_camera/l3xz_openmv_camera_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'l3xz_openmv_camera' build argument 'cmake_args' from command line to 'None'
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'l3xz_openmv_camera' build argument 'cmake_target' from command line to 'None'
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'l3xz_openmv_camera' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'l3xz_openmv_camera' build argument 'cmake_clean_cache' from command line to 'False'
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'l3xz_openmv_camera' build argument 'cmake_clean_first' from command line to 'False'
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'l3xz_openmv_camera' build argument 'cmake_force_configure' from command line to 'False'
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'l3xz_openmv_camera' build argument 'ament_cmake_args' from command line to 'None'
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'l3xz_openmv_camera' build argument 'catkin_cmake_args' from command line to 'None'
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'l3xz_openmv_camera' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.445s] DEBUG:colcon.colcon_core.verb:Building package 'l3xz_openmv_camera' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/student/ros2_ws/build/l3xz_openmv_camera', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/student/ros2_ws/install/l3xz_openmv_camera', 'merge_install': False, 'path': '/home/student/ros2_ws/src/l3xz_openmv_camera/l3xz_openmv_camera', 'symlink_install': False, 'test_result_base': None}
+[0.445s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.448s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.449s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/student/ros2_ws/src/l3xz_openmv_camera/l3xz_openmv_camera_interfaces' with build type 'ament_cmake'
+[0.449s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/student/ros2_ws/src/l3xz_openmv_camera/l3xz_openmv_camera_interfaces'
+[0.453s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.453s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.453s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.460s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/student/ros2_ws/src/eced3901' with build type 'ament_python'
+[0.460s] Level 1:colcon.colcon_core.shell:create_environment_hook('eced3901', 'ament_prefix_path')
+[0.461s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros2_ws/install/eced3901/share/eced3901/hook/ament_prefix_path.ps1'
+[0.462s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/ros2_ws/install/eced3901/share/eced3901/hook/ament_prefix_path.dsv'
+[0.462s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros2_ws/install/eced3901/share/eced3901/hook/ament_prefix_path.sh'
+[0.464s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.464s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.476s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/ros2_ws/build/l3xz_openmv_camera_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/motor_ws/install/dalmotor:/home/student/ros2_ws/install/test-3901:/home/student/ros2_ws/install/l3xz_openmv_camera:/home/student/ros2_ws/install/eced3901_competition_2024:/home/student/ros2_ws/install/eced3901:/home/student/imu_ws/install/bno055:/opt/ros/humble /usr/bin/cmake --build /home/student/ros2_ws/build/l3xz_openmv_camera_interfaces -- -j4 -l4
+[0.802s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/student/ros2_ws/src/eced3901'
+[0.804s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.804s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.920s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/ros2_ws/build/l3xz_openmv_camera_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/motor_ws/install/dalmotor:/home/student/ros2_ws/install/test-3901:/home/student/ros2_ws/install/l3xz_openmv_camera:/home/student/ros2_ws/install/eced3901_competition_2024:/home/student/ros2_ws/install/eced3901:/home/student/imu_ws/install/bno055:/opt/ros/humble /usr/bin/cmake --build /home/student/ros2_ws/build/l3xz_openmv_camera_interfaces -- -j4 -l4
+[1.130s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/ros2_ws/build/l3xz_openmv_camera_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/motor_ws/install/dalmotor:/home/student/ros2_ws/install/test-3901:/home/student/ros2_ws/install/l3xz_openmv_camera:/home/student/ros2_ws/install/eced3901_competition_2024:/home/student/ros2_ws/install/eced3901:/home/student/imu_ws/install/bno055:/opt/ros/humble /usr/bin/cmake --install /home/student/ros2_ws/build/l3xz_openmv_camera_interfaces
+[1.198s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(l3xz_openmv_camera_interfaces)
+[1.204s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros2_ws/install/l3xz_openmv_camera_interfaces' for CMake module files
+[1.205s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros2_ws/install/l3xz_openmv_camera_interfaces' for CMake config files
+[1.206s] Level 1:colcon.colcon_core.shell:create_environment_hook('l3xz_openmv_camera_interfaces', 'cmake_prefix_path')
+[1.208s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros2_ws/install/l3xz_openmv_camera_interfaces/share/l3xz_openmv_camera_interfaces/hook/cmake_prefix_path.ps1'
+[1.209s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/ros2_ws/install/l3xz_openmv_camera_interfaces/share/l3xz_openmv_camera_interfaces/hook/cmake_prefix_path.dsv'
+[1.210s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros2_ws/install/l3xz_openmv_camera_interfaces/share/l3xz_openmv_camera_interfaces/hook/cmake_prefix_path.sh'
+[1.213s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/ros2_ws/build/l3xz_openmv_camera_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/motor_ws/install/dalmotor:/home/student/ros2_ws/install/test-3901:/home/student/ros2_ws/install/l3xz_openmv_camera:/home/student/ros2_ws/install/eced3901_competition_2024:/home/student/ros2_ws/install/eced3901:/home/student/imu_ws/install/bno055:/opt/ros/humble /usr/bin/cmake --install /home/student/ros2_ws/build/l3xz_openmv_camera_interfaces
+[1.213s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros2_ws/install/l3xz_openmv_camera_interfaces/lib'
+[1.213s] Level 1:colcon.colcon_core.shell:create_environment_hook('l3xz_openmv_camera_interfaces', 'ld_library_path_lib')
+[1.215s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros2_ws/install/l3xz_openmv_camera_interfaces/share/l3xz_openmv_camera_interfaces/hook/ld_library_path_lib.ps1'
+[1.216s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/ros2_ws/install/l3xz_openmv_camera_interfaces/share/l3xz_openmv_camera_interfaces/hook/ld_library_path_lib.dsv'
+[1.216s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros2_ws/install/l3xz_openmv_camera_interfaces/share/l3xz_openmv_camera_interfaces/hook/ld_library_path_lib.sh'
+[1.217s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros2_ws/install/l3xz_openmv_camera_interfaces/bin'
+[1.217s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros2_ws/install/l3xz_openmv_camera_interfaces/lib/pkgconfig/l3xz_openmv_camera_interfaces.pc'
+[1.217s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros2_ws/install/l3xz_openmv_camera_interfaces/lib/python3.10/site-packages'
+[1.218s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros2_ws/install/l3xz_openmv_camera_interfaces/bin'
+[1.219s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros2_ws/install/l3xz_openmv_camera_interfaces/share/l3xz_openmv_camera_interfaces/package.ps1'
+[1.220s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/ros2_ws/install/l3xz_openmv_camera_interfaces/share/l3xz_openmv_camera_interfaces/package.dsv'
+[1.221s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros2_ws/install/l3xz_openmv_camera_interfaces/share/l3xz_openmv_camera_interfaces/package.sh'
+[1.223s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros2_ws/install/l3xz_openmv_camera_interfaces/share/l3xz_openmv_camera_interfaces/package.bash'
+[1.224s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros2_ws/install/l3xz_openmv_camera_interfaces/share/l3xz_openmv_camera_interfaces/package.zsh'
+[1.225s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/ros2_ws/install/l3xz_openmv_camera_interfaces/share/colcon-core/packages/l3xz_openmv_camera_interfaces)
+[1.240s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/ros2_ws/src/eced3901': PYTHONPATH=/home/student/ros2_ws/build/eced3901/prefix_override:/home/student/ros2_ws/install/eced3901/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/eced3901 build --build-base /home/student/ros2_ws/build/eced3901/build install --record /home/student/ros2_ws/build/eced3901/install.log --single-version-externally-managed
+[1.325s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(l3xz_openmv_camera_interfaces)
+[1.327s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros2_ws/install/l3xz_openmv_camera_interfaces' for CMake module files
+[1.328s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros2_ws/install/l3xz_openmv_camera_interfaces' for CMake config files
+[1.329s] Level 1:colcon.colcon_core.shell:create_environment_hook('l3xz_openmv_camera_interfaces', 'cmake_prefix_path')
+[1.330s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros2_ws/install/l3xz_openmv_camera_interfaces/share/l3xz_openmv_camera_interfaces/hook/cmake_prefix_path.ps1'
+[1.330s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/ros2_ws/install/l3xz_openmv_camera_interfaces/share/l3xz_openmv_camera_interfaces/hook/cmake_prefix_path.dsv'
+[1.331s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros2_ws/install/l3xz_openmv_camera_interfaces/share/l3xz_openmv_camera_interfaces/hook/cmake_prefix_path.sh'
+[1.331s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros2_ws/install/l3xz_openmv_camera_interfaces/lib'
+[1.331s] Level 1:colcon.colcon_core.shell:create_environment_hook('l3xz_openmv_camera_interfaces', 'ld_library_path_lib')
+[1.333s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros2_ws/install/l3xz_openmv_camera_interfaces/share/l3xz_openmv_camera_interfaces/hook/ld_library_path_lib.ps1'
+[1.333s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/ros2_ws/install/l3xz_openmv_camera_interfaces/share/l3xz_openmv_camera_interfaces/hook/ld_library_path_lib.dsv'
+[1.334s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros2_ws/install/l3xz_openmv_camera_interfaces/share/l3xz_openmv_camera_interfaces/hook/ld_library_path_lib.sh'
+[1.334s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros2_ws/install/l3xz_openmv_camera_interfaces/bin'
+[1.334s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros2_ws/install/l3xz_openmv_camera_interfaces/lib/pkgconfig/l3xz_openmv_camera_interfaces.pc'
+[1.334s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros2_ws/install/l3xz_openmv_camera_interfaces/lib/python3.10/site-packages'
+[1.335s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros2_ws/install/l3xz_openmv_camera_interfaces/bin'
+[1.336s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros2_ws/install/l3xz_openmv_camera_interfaces/share/l3xz_openmv_camera_interfaces/package.ps1'
+[1.337s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/ros2_ws/install/l3xz_openmv_camera_interfaces/share/l3xz_openmv_camera_interfaces/package.dsv'
+[1.337s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros2_ws/install/l3xz_openmv_camera_interfaces/share/l3xz_openmv_camera_interfaces/package.sh'
+[1.338s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros2_ws/install/l3xz_openmv_camera_interfaces/share/l3xz_openmv_camera_interfaces/package.bash'
+[1.338s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros2_ws/install/l3xz_openmv_camera_interfaces/share/l3xz_openmv_camera_interfaces/package.zsh'
+[1.339s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/ros2_ws/install/l3xz_openmv_camera_interfaces/share/colcon-core/packages/l3xz_openmv_camera_interfaces)
+[1.339s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/student/ros2_ws/src/l3xz_openmv_camera/l3xz_openmv_camera' with build type 'ament_python'
+[1.339s] Level 1:colcon.colcon_core.shell:create_environment_hook('l3xz_openmv_camera', 'ament_prefix_path')
+[1.341s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros2_ws/install/l3xz_openmv_camera/share/l3xz_openmv_camera/hook/ament_prefix_path.ps1'
+[1.341s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/ros2_ws/install/l3xz_openmv_camera/share/l3xz_openmv_camera/hook/ament_prefix_path.dsv'
+[1.342s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros2_ws/install/l3xz_openmv_camera/share/l3xz_openmv_camera/hook/ament_prefix_path.sh'
+[1.344s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.344s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.618s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/student/ros2_ws/src/l3xz_openmv_camera/l3xz_openmv_camera'
+[1.619s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.619s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.628s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros2_ws/install/eced3901' for CMake module files
+[1.629s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/ros2_ws/src/eced3901' returned '0': PYTHONPATH=/home/student/ros2_ws/build/eced3901/prefix_override:/home/student/ros2_ws/install/eced3901/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/eced3901 build --build-base /home/student/ros2_ws/build/eced3901/build install --record /home/student/ros2_ws/build/eced3901/install.log --single-version-externally-managed
+[1.629s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros2_ws/install/eced3901' for CMake config files
+[1.630s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros2_ws/install/eced3901/lib'
+[1.630s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros2_ws/install/eced3901/bin'
+[1.630s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros2_ws/install/eced3901/lib/pkgconfig/eced3901.pc'
+[1.630s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros2_ws/install/eced3901/lib/python3.10/site-packages'
+[1.630s] Level 1:colcon.colcon_core.shell:create_environment_hook('eced3901', 'pythonpath')
+[1.632s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros2_ws/install/eced3901/share/eced3901/hook/pythonpath.ps1'
+[1.632s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/ros2_ws/install/eced3901/share/eced3901/hook/pythonpath.dsv'
+[1.632s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros2_ws/install/eced3901/share/eced3901/hook/pythonpath.sh'
+[1.633s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros2_ws/install/eced3901/bin'
+[1.633s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(eced3901)
+[1.634s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros2_ws/install/eced3901/share/eced3901/package.ps1'
+[1.635s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/ros2_ws/install/eced3901/share/eced3901/package.dsv'
+[1.635s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros2_ws/install/eced3901/share/eced3901/package.sh'
+[1.636s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros2_ws/install/eced3901/share/eced3901/package.bash'
+[1.636s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros2_ws/install/eced3901/share/eced3901/package.zsh'
+[1.636s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/ros2_ws/install/eced3901/share/colcon-core/packages/eced3901)
+[1.939s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/ros2_ws/src/l3xz_openmv_camera/l3xz_openmv_camera': PYTHONPATH=/home/student/ros2_ws/build/l3xz_openmv_camera/prefix_override:/home/student/ros2_ws/install/l3xz_openmv_camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/l3xz_openmv_camera build --build-base /home/student/ros2_ws/build/l3xz_openmv_camera/build install --record /home/student/ros2_ws/build/l3xz_openmv_camera/install.log --single-version-externally-managed
+[2.217s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros2_ws/install/l3xz_openmv_camera' for CMake module files
+[2.217s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/ros2_ws/src/l3xz_openmv_camera/l3xz_openmv_camera' returned '0': PYTHONPATH=/home/student/ros2_ws/build/l3xz_openmv_camera/prefix_override:/home/student/ros2_ws/install/l3xz_openmv_camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/l3xz_openmv_camera build --build-base /home/student/ros2_ws/build/l3xz_openmv_camera/build install --record /home/student/ros2_ws/build/l3xz_openmv_camera/install.log --single-version-externally-managed
+[2.217s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros2_ws/install/l3xz_openmv_camera' for CMake config files
+[2.218s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros2_ws/install/l3xz_openmv_camera/lib'
+[2.218s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros2_ws/install/l3xz_openmv_camera/bin'
+[2.218s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros2_ws/install/l3xz_openmv_camera/lib/pkgconfig/l3xz_openmv_camera.pc'
+[2.218s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros2_ws/install/l3xz_openmv_camera/lib/python3.10/site-packages'
+[2.218s] Level 1:colcon.colcon_core.shell:create_environment_hook('l3xz_openmv_camera', 'pythonpath')
+[2.220s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros2_ws/install/l3xz_openmv_camera/share/l3xz_openmv_camera/hook/pythonpath.ps1'
+[2.220s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/ros2_ws/install/l3xz_openmv_camera/share/l3xz_openmv_camera/hook/pythonpath.dsv'
+[2.220s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros2_ws/install/l3xz_openmv_camera/share/l3xz_openmv_camera/hook/pythonpath.sh'
+[2.221s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros2_ws/install/l3xz_openmv_camera/bin'
+[2.221s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(l3xz_openmv_camera)
+[2.222s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros2_ws/install/l3xz_openmv_camera/share/l3xz_openmv_camera/package.ps1'
+[2.223s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/ros2_ws/install/l3xz_openmv_camera/share/l3xz_openmv_camera/package.dsv'
+[2.223s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros2_ws/install/l3xz_openmv_camera/share/l3xz_openmv_camera/package.sh'
+[2.224s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros2_ws/install/l3xz_openmv_camera/share/l3xz_openmv_camera/package.bash'
+[2.224s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros2_ws/install/l3xz_openmv_camera/share/l3xz_openmv_camera/package.zsh'
+[2.224s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/ros2_ws/install/l3xz_openmv_camera/share/colcon-core/packages/l3xz_openmv_camera)
+[2.225s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.225s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.225s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.225s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.230s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.230s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.230s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.242s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.243s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/student/ros2_ws/install/local_setup.ps1'
+[2.245s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/student/ros2_ws/install/_local_setup_util_ps1.py'
+[2.246s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/student/ros2_ws/install/setup.ps1'
+[2.248s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/student/ros2_ws/install/local_setup.sh'
+[2.249s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/student/ros2_ws/install/_local_setup_util_sh.py'
+[2.249s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/student/ros2_ws/install/setup.sh'
+[2.251s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/student/ros2_ws/install/local_setup.bash'
+[2.251s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/student/ros2_ws/install/setup.bash'
+[2.254s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/student/ros2_ws/install/local_setup.zsh'
+[2.254s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/student/ros2_ws/install/setup.zsh'

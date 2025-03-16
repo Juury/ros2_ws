@@ -1,104 +1,101 @@
 #!/usr/bin/env python3
-import math
-from copy import deepcopy
+
 import rclpy
+from copy import deepcopy
 from geometry_msgs.msg import PoseStamped
 from nav2_simple_commander.robot_navigator import BasicNavigator, TaskResult
 
-# Function to generate a quaternion from a yaw angle (in radians)
-def quaternion_from_yaw(yaw):
-    qz = math.sin(yaw / 2.0)
-    qw = math.cos(yaw / 2.0)
-    return 0.0, 0.0, qz, qw
-
 def main():
     rclpy.init()
+
     navigator = BasicNavigator()
 
-    # Define the target waypoint (e.g., Magnet location) in the map frame.
-    waypoint = [1.0889397859573364, 0.357479453086853]
+    # -------------------------------------------------------------
+    # 1) Define a list of (x,y) positions for your inspection route
+    # -------------------------------------------------------------
+    # For demonstration, here's a small route. Replace with your own coords.
+    inspection_route = [
+        [1.088, 0.0],
+        [2.10, 0.79],
+        [0.859, 0.70],
+    ]
 
-    # Set the initial pose (make sure this is set correctly for localization)
+    # -------------------------------------------------------------
+    # 2) Set the robot's initial pose (optional but recommended)
+    # -------------------------------------------------------------
     initial_pose = PoseStamped()
     initial_pose.header.frame_id = 'map'
     initial_pose.header.stamp = navigator.get_clock().now().to_msg()
+
+    # Example: Start near (x=0.0, y=0.0) with a certain orientation
     initial_pose.pose.position.x = 0.0
     initial_pose.pose.position.y = 0.0
+    # Orientation (z,w) for yaw=0.0
     initial_pose.pose.orientation.z = 0.0
     initial_pose.pose.orientation.w = 1.0
+
+    # Tell the navigator our initial pose
     navigator.setInitialPose(initial_pose)
 
-    # Wait for Nav2 to become active
+    # Wait for Nav2 to activate
     navigator.waitUntilNav2Active()
-    print("Nav2 is active; sending goal to the waypoint.")
+    print("Nav2 is active; starting waypoint navigation.")
 
-    # Create the goal pose for navigation (drive to waypoint)
-    goal_pose = PoseStamped()
-    goal_pose.header.frame_id = 'map'
-    goal_pose.header.stamp = navigator.get_clock().now().to_msg()
-    goal_pose.pose.position.x = waypoint[0]
-    goal_pose.pose.position.y = waypoint[1]
-    goal_pose.pose.orientation.z = 0.0
-    goal_pose.pose.orientation.w = 1.0
+    # -------------------------------------------------------------
+    # 3) Convert the route list to PoseStamped waypoints
+    # -------------------------------------------------------------
+    inspection_points = []
+    for xy in inspection_route:
+        pose = PoseStamped()
+        pose.header.frame_id = 'map'
+        pose.header.stamp = navigator.get_clock().now().to_msg()
 
-    # Send the goal to drive to the waypoint
-    navigator.goToPose(goal_pose)
+        pose.pose.position.x = xy[0]
+        pose.pose.position.y = xy[1]
+
+        # We'll keep orientation facing "straight up" (0 radians) as an example.
+        # If you want the robot to face a certain direction, set pose.pose.orientation.
+        pose.pose.orientation.z = 0.0
+        pose.pose.orientation.w = 1.0
+
+        inspection_points.append(deepcopy(pose))
+
+    # -------------------------------------------------------------
+    # 4) Follow Waypoints
+    # -------------------------------------------------------------
+    navigator.followWaypoints(inspection_points)
+
+    # Optionally do something else while robot is traveling
+    i = 0
     while not navigator.isTaskComplete():
-        rclpy.spin_once(navigator, timeout_sec=0.1)
+        feedback = navigator.getFeedback()
+        i += 1
+        # Just a simple example to print status every 5 feedback cycles
+        if feedback and i % 5 == 0:
+            print(f'Executing current waypoint: '
+                  f'{feedback.current_waypoint + 1}/{len(inspection_points)}')
+
+    # Check final result
     result = navigator.getResult()
-
     if result == TaskResult.SUCCEEDED:
-        print("Reached the waypoint successfully!")
-        # Now command a 90° turn at the same position.
+        print('Inspection route complete!')
+    elif result == TaskResult.CANCELED:
+        print('Route was canceled!')
+    elif result == TaskResult.FAILED:
+        print('Route failed!')
 
-        # Create a new pose with the same position but rotated 90°.
-        turn_pose = PoseStamped()
-        turn_pose.header.frame_id = 'map'
-        turn_pose.header.stamp = navigator.get_clock().now().to_msg()
-        turn_pose.pose.position.x = goal_pose.pose.position.x
-        turn_pose.pose.position.y = goal_pose.pose.position.y
+    # -------------------------------------------------------------
+    # 5) (Optional) Return to Start
+    # -------------------------------------------------------------
+    # If you’d like to automatically return to the initial pose:
+    initial_pose.header.stamp = navigator.get_clock().now().to_msg()
+    navigator.goToPose(initial_pose)
+    while not navigator.isTaskComplete():
+        pass
 
-        # Compute quaternion for a 90° rotation (counterclockwise)
-        _, _, qz, qw = quaternion_from_yaw(math.pi / 2)
-        turn_pose.pose.orientation.x = 0.0
-        turn_pose.pose.orientation.y = 0.0
-        turn_pose.pose.orientation.z = qz
-        turn_pose.pose.orientation.w = qw
-
-        print("Sending goal to rotate 90 degrees.")
-        navigator.goToPose(turn_pose)
-        while not navigator.isTaskComplete():
-            rclpy.spin_once(navigator, timeout_sec=0.1)
-        turn_result = navigator.getResult()
-
-        if turn_result == TaskResult.SUCCEEDED:
-            print("Turned 90 degrees successfully!")
-            # To force a valid trajectory, add a slight offset in the direction the robot is now facing.
-            forward_pose = PoseStamped()
-            forward_pose.header.frame_id = 'map'
-            forward_pose.header.stamp = navigator.get_clock().now().to_msg()
-            forward_distance = 0.02  # small offset (e.g., 2 cm)
-            # Use the same heading (yaw = pi/2) to calculate the new x and y:
-            forward_pose.pose.position.x = turn_pose.pose.position.x + forward_distance * math.cos(math.pi / 2)
-            forward_pose.pose.position.y = turn_pose.pose.position.y + forward_distance * math.sin(math.pi / 2)
-            # Maintain the same orientation as the turn_pose:
-            forward_pose.pose.orientation = turn_pose.pose.orientation
-
-            print("Sending goal to move forward slightly.")
-            navigator.goToPose(forward_pose)
-            while not navigator.isTaskComplete():
-                rclpy.spin_once(navigator, timeout_sec=0.1)
-            forward_result = navigator.getResult()
-            if forward_result == TaskResult.SUCCEEDED:
-                print("Moved forward successfully!")
-            else:
-                print("Failed to move forward.")
-        else:
-            print("Failed to complete the 90° turn.")
-    else:
-        print("Failed to reach the initial waypoint.")
-
+    print("Done! Shutting down.")
     rclpy.shutdown()
+
 
 if __name__ == '__main__':
     main()

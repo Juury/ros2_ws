@@ -1,0 +1,16 @@
+import serial
+import time
+
+# Set up the serial connection (use COM7 for Windows)
+ser = serial.Serial('/dev/ttyUSB4', 9600)  # Adjust baud rate if needed
+time.sleep(2)  # Wait for connection to establish
+
+# Send "SAFE" over serial
+ser.write(b"SAFE~")  # Send as bytes with a newline character
+
+# Optional: Read response (if Arduino sends any)
+response = ser.readline().decode('utf-8').strip()
+print(f"Arduino response: {response}")
+
+# Close serial connection
+ser.close()
